@@ -2459,7 +2459,6 @@ RegisterComponents(
     DPRINT("Register Components: done\n");
     SendMessage(pItemsData->hwndDlg, PM_ITEM_END, 0, Error);
 }
-
 static
 VOID
 SaveSettings(
