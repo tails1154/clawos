@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Storage Stack
+ * PROJECT:     ClawOS Storage Stack
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  *              or MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     ATA IDENTIFY DEVICE and IDENTIFY PACKET DEVICE data helper functions

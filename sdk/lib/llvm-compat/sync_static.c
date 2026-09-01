@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS SDK
+ * PROJECT:     ClawOS SDK
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Statically linked SRW lock, condition variable and init-once surface for llvm-mingw runtimes
  * COPYRIGHT:   Copyright 2026 Ahmed Arif <arif.ing@outlook.com>
@@ -10,7 +10,7 @@
  * variable and one-time initialization APIs (through dllimport slots). Bind them to the RTL implementation
  * linked statically from rtl_vista (sdk/lib/rtl's srw.c, condvar.c and runonce.c) instead of exporting them
  * from kernel32_vista.dll: modules get one self-contained, consistent synchronization implementation
- * (ReactOS' lock layout is not Windows-compatible, mixing implementations on the same lock would be fatal)
+ * (ClawOS' lock layout is not Windows-compatible, mixing implementations on the same lock would be fatal)
  * and no import that real Windows cannot satisfy.
  */
 

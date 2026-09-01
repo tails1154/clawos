@@ -1,8 +1,8 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS DVB
+ * PROJECT:         ClawOS DVB
  * FILE:            dll/directx/msvidctl/msvidctl.cpp
- * PURPOSE:         ReactOS DVB Initialization
+ * PURPOSE:         ClawOS DVB Initialization
  *
  * PROGRAMMERS:     Johannes Anderwald (johannes.anderwald@reactos.org)
  */

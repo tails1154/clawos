@@ -1,5 +1,5 @@
 /*
- *  ReactOS About Dialog Box
+ *  ClawOS About Dialog Box
  *
  *  about.h
  *

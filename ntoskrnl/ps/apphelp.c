@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            ntoskrnl/ps/apphelp.c
  * PURPOSE:         SHIM engine caching.

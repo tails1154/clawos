@@ -1856,7 +1856,7 @@ static void test_GetMouseMovePointsEx_process(void)
 #ifdef __REACTOS__
     if (is_reactos())
     {
-        ok(FALSE, "Broken on ReactOS\n");
+        ok(FALSE, "Broken on ClawOS\n");
         skip("Skipping test_GetMouseMovePointsEx_process due to CORE-20552\n");
         return;
     }

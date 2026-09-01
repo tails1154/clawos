@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS SDK
+ * PROJECT:     ClawOS SDK
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     shlwapi header
  * COPYRIGHT:   Copyright 2025 Carl Bialorucki (carl.bialorucki@reactos.org)

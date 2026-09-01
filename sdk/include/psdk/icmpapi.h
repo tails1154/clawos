@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS PSDK
+ * PROJECT:     ClawOS PSDK
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     ICMP API definitions
  * COPYRIGHT:   Copyright 2025 Hermès Bélusca-Maïto <hermes.belusca-maito@reactos.org>

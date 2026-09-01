@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS msvcrt
+ * PROJECT:     ClawOS msvcrt
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Implementation of system / _wsystem
  * COPYRIGHT:   Copyright (c) Microsoft Corporation.  All rights reserved.

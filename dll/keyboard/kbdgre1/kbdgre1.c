@@ -1,6 +1,6 @@
 ﻿/*
- * ReactOS German Extended (E1) Keyboard layout
- * Copyright (C) 2025 ReactOS
+ * ClawOS German Extended (E1) Keyboard layout
+ * Copyright (C) 2025 ClawOS
  * License: LGPL, see: LGPL.txt
  *
  * Thanks to: http://www.barcodeman.com/altek/mule/scandoc.php
@@ -373,10 +373,10 @@ ROSDATA VSC_LPWSTR extended_key_names[] = {
   { 0x51, L"Bild-Nach-Unten" },
   { 0x52, L"Einfg" },
   { 0x53, L"Entf" },
-  { 0x54, L"<ReactOS>" },
+  { 0x54, L"<ClawOS>" },
   { 0x55, L"Hilfe" },
-  { 0x56, L"Linke <ReactOS>" },
-  { 0x5b, L"Rechte <ReactOS>" },
+  { 0x56, L"Linke <ClawOS>" },
+  { 0x5b, L"Rechte <ClawOS>" },
   { 0, NULL },
 };
 

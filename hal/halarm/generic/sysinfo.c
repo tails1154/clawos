@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS HAL
+ * PROJECT:         ClawOS HAL
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            hal/halarm/generic/sysinfo.c
  * PURPOSE:         HAL Information Routines
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/

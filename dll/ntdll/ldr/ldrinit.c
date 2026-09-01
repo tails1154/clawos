@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS NT User-Mode Library
+ * PROJECT:         ClawOS NT User-Mode Library
  * FILE:            dll/ntdll/ldr/ldrinit.c
  * PURPOSE:         User-Mode Process/Thread Startup
  * PROGRAMMERS:     Alex Ionescu (alex@relsoft.net)
@@ -1609,12 +1609,12 @@ LdrpInitializeProcessCompat(PVOID pProcessActctx, PVOID* pOldShimData)
     SIZE_T SizeRequired;
     NTSTATUS Status;
     DWORD n, cur;
-    ReactOS_ShimData* pShimData = *pOldShimData;
+    ClawOS_ShimData* pShimData = *pOldShimData;
 
     if (pShimData)
     {
         if (pShimData->dwMagic != REACTOS_SHIMDATA_MAGIC ||
-            pShimData->dwSize != sizeof(ReactOS_ShimData))
+            pShimData->dwSize != sizeof(ClawOS_ShimData))
         {
             DPRINT1("LdrpInitializeProcessCompat: Corrupt pShimData (0x%x, %u)\n", pShimData->dwMagic, pShimData->dwSize);
             return;
@@ -1659,7 +1659,7 @@ LdrpInitializeProcessCompat(PVOID pProcessActctx, PVOID* pOldShimData)
     /* Search for known GUIDs, starting from oldest to newest.
        Note that on Windows it is somewhat reversed, starting from the latest known
        version, going down. But we are not Windows, trying to allow a lower version,
-       we are ReactOS trying to fake a higher version. So we interpret what Windows
+       we are ClawOS trying to fake a higher version. So we interpret what Windows
        does as "try the closest version to the actual version", so we start with the
        lowest version, which is closest to Windows 2003, which we mostly are. */
     for (cur = RTL_NUMBER_OF(KnownCompatGuids) - 1; cur != -1; --cur)
@@ -1860,7 +1860,7 @@ LdrpInitializeProcess(IN PCONTEXT Context,
     /* Save the old Shim Data */
     OldShimData = Peb->pShimData;
 
-    /* ReactOS specific: do not clear it. (Windows starts doing the same in later versions) */
+    /* ClawOS specific: do not clear it. (Windows starts doing the same in later versions) */
     //Peb->pShimData = NULL;
 
     /* Save the number of processors and CS timeout */

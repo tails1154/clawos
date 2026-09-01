@@ -1,5 +1,5 @@
 /*
-    ReactOS
+    ClawOS
     Sound Blaster driver
 
     Programmers:

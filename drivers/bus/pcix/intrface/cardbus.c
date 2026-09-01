@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS PCI Bus Driver
+ * PROJECT:         ClawOS PCI Bus Driver
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            drivers/bus/pci/intrface/cardbus.c
  * PURPOSE:         CardBus Interface
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/

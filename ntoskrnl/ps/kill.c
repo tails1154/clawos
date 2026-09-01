@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            ntoskrnl/ps/kill.c
  * PURPOSE:         Process Manager: Process and Thread Termination

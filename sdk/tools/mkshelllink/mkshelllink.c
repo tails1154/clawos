@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Shell Link maker
+ * PROJECT:     ClawOS Shell Link maker
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Shell Link maker
  * COPYRIGHT:   Copyright 2011 Rafal Harabien <rafalh@reactos.org>

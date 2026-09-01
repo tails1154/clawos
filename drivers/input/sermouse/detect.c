@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Serial mouse driver
+ * PROJECT:     ClawOS Serial mouse driver
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        drivers/input/sermouse/detect.c
  * PURPOSE:     Detect serial mouse type

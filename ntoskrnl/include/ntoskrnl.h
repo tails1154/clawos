@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * FILE:            ntoskrnl/include/ntoskrnl.h
  * PURPOSE:         Main Kernel Header
  * PROGRAMMER:      Alex Ionescu (alex@relsoft.net)

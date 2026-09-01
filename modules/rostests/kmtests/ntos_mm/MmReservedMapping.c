@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS kernel-mode tests
+ * PROJECT:     ClawOS kernel-mode tests
  * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
  * PURPOSE:     Kernel-Mode Test Suite Reserved Mapping test
  * COPYRIGHT:   Copyright 2015,2023 Thomas Faber (thomas.faber@reactos.org)
@@ -9,7 +9,7 @@
 #include <kmt_test.h>
 
 static BOOLEAN g_IsPae;
-static BOOLEAN g_IsReactOS;
+static BOOLEAN g_IsClawOS;
 
 #ifdef _M_IX86
 
@@ -139,12 +139,12 @@ ValidateMapping(
     {
         ExpectedValue = (TotalPtes + 2) << 28;
     }
-    else if (g_IsReactOS || GetNTVersion() >= _WIN32_WINNT_VISTA)
+    else if (g_IsClawOS || GetNTVersion() >= _WIN32_WINNT_VISTA)
 #else
-    if (g_IsReactOS || GetNTVersion() >= _WIN32_WINNT_VISTA)
+    if (g_IsClawOS || GetNTVersion() >= _WIN32_WINNT_VISTA)
 #endif
     {
-        /* On ReactOS and on Vista+ the size is stored in
+        /* On ClawOS and on Vista+ the size is stored in
          * the NextEntry field of a MMPTE_LIST structure */
         ExpectedValue = ((ULONG64)TotalPtes + 2) << 32;
     }
@@ -333,9 +333,9 @@ START_TEST(MmReservedMapping)
     PVOID Mapping;
 
     g_IsPae = ExIsProcessorFeaturePresent(PF_PAE_ENABLED);
-    g_IsReactOS = *(PULONG)(KI_USER_SHARED_DATA + PAGE_SIZE - sizeof(ULONG)) == 0x8eac705;
-    if (!g_IsReactOS)
-        trace("Not ReactOS\n");
+    g_IsClawOS = *(PULONG)(KI_USER_SHARED_DATA + PAGE_SIZE - sizeof(ULONG)) == 0x8eac705;
+    if (!g_IsClawOS)
+        trace("Not ClawOS\n");
 
     pMmAllocatePagesForMdlEx = KmtGetSystemRoutineAddress(L"MmAllocatePagesForMdlEx");
 

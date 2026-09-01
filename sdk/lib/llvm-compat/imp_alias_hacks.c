@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS SDK
+ * PROJECT:     ClawOS SDK
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     dllimport-slot aliases for llvm-mingw runtime references
  * COPYRIGHT:   Copyright 2026 Ahmed Arif <arif.ing@outlook.com>

@@ -1,7 +1,7 @@
 /*
- * PROJECT:     ReactOS win32 DLLs
+ * PROJECT:     ClawOS win32 DLLs
  * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
- * PURPOSE:     ReactOS store related code for crypt32
+ * PURPOSE:     ClawOS store related code for crypt32
  * COPYRIGHT:   Copyright 2025 Ratin Gao <ratin@knsoft.org>
  */
 

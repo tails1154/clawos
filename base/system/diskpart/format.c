@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS DiskPart
+ * PROJECT:         ClawOS DiskPart
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            base/system/diskpart/format.c
  * PURPOSE:         Manages all the partitions of the OS in an interactive way.
@@ -26,7 +26,7 @@ GetFsModule(
     *phModule = NULL;
 
     dwErr = RegOpenKeyExW(HKEY_LOCAL_MACHINE,
-                          L"SOFTWARE\\ReactOS\\ReactOS\\CurrentVersion\\IFS",
+                          L"SOFTWARE\\ClawOS\\ClawOS\\CurrentVersion\\IFS",
                           0,
                           KEY_READ,
                           &hKey);

@@ -269,7 +269,7 @@ UefiExitBootServices(VOID)
 }
 
 VOID
-UefiPrepareForReactOS(VOID)
+UefiPrepareForClawOS(VOID)
 {
     _exituefi();
 }

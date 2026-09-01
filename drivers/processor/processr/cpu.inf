@@ -1,10 +1,10 @@
 [Version]
 Signature  = "$Windows NT$"
-;Signature  = "$ReactOS$"
+;Signature  = "$ClawOS$"
 LayoutFile = layout.inf
 Class      = Processor
 ClassGUID  = {50127DC3-0F36-415e-A6CC-4CB3BE910B65}
-Provider   = %ReactOS%
+Provider   = %ClawOS%
 DriverVer  = 09/27/2007,1.00
 
 [ControlFlags]
@@ -138,7 +138,7 @@ LoadOrderGroup = Extended Base
 
 [Strings]
 ; Non-localizable
-ReactOS = "ReactOS Project"
+ClawOS = "ClawOS Project"
 
 CyrixMfg = "Cyrix"
 IntelMfg = "Intel"

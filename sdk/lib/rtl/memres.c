@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS system libraries
+ * PROJECT:     ClawOS system libraries
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Encode/decode helpers for memory and port resource descriptors.
  * COPYRIGHT:   Copyright 2026 Justin Miller <justin.miller@reactos.org>

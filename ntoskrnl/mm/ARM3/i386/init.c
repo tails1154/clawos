@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            ntoskrnl/mm/ARM3/i386/init.c
  * PURPOSE:         ARM Memory Manager Initialization for x86
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/
@@ -308,7 +308,7 @@ MiInitMachineDependent(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
 
     //
     // Normally, the PFN database should start after the loader images.
-    // This is already the case in ReactOS, but for now we want to co-exist
+    // This is already the case in ClawOS, but for now we want to co-exist
     // with the old memory manager, so we'll create a "Shadow PFN Database"
     // instead, and arbitrarly start it at 0xB0000000.
     //

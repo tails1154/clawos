@@ -168,7 +168,7 @@ InitializeFmIfsOnce(VOID)
 {
     OBJECT_ATTRIBUTES ObjectAttributes;
     UNICODE_STRING RegistryPath
-        = RTL_CONSTANT_STRING(L"\\REGISTRY\\Machine\\SOFTWARE\\ReactOS\\ReactOS\\CurrentVersion\\IFS");
+        = RTL_CONSTANT_STRING(L"\\REGISTRY\\Machine\\SOFTWARE\\ClawOS\\ClawOS\\CurrentVersion\\IFS");
     HANDLE hKey = NULL;
     PKEY_VALUE_FULL_INFORMATION Buffer;
     ULONG BufferSize = sizeof(KEY_VALUE_FULL_INFORMATION) + MAX_PATH;
@@ -180,7 +180,7 @@ InitializeFmIfsOnce(VOID)
 
     InitializeListHead(&ProviderListHead);
 
-    /* Read IFS providers from HKLM\SOFTWARE\ReactOS\ReactOS\CurrentVersion\IFS */
+    /* Read IFS providers from HKLM\SOFTWARE\ClawOS\ClawOS\CurrentVersion\IFS */
     InitializeObjectAttributes(&ObjectAttributes, &RegistryPath, 0, NULL, NULL);
     Status = NtOpenKey(&hKey, KEY_QUERY_VALUE, &ObjectAttributes);
     if (Status == STATUS_OBJECT_NAME_NOT_FOUND)

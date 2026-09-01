@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Tests
+ * PROJECT:     ClawOS Tests
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Tests whether a dialog is getting visible even if WM_INITDIALOG ends it.
  * COPYRIGHT:   Copyright 2026 Hermès Bélusca-Maïto <hermes.belusca-maito@reactos.org>

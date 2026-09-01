@@ -1,8 +1,8 @@
 /*
- * PROJECT:     ReactOS Service Host
+ * PROJECT:     ClawOS Service Host
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * PURPOSE:     Global Header for Service Host
- * PROGRAMMERS: ReactOS Portable Systems Group
+ * PROGRAMMERS: ClawOS Portable Systems Group
  *
  * REFERENCES:
  * https://www.geoffchappell.com/studies/windows/win32/services/svchost/process/globaldata.htm

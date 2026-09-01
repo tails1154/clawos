@@ -580,7 +580,7 @@ Return Value:
 
                     break;
 
-                /* ReactOS Change: GCC "enumeration value not handled in switch" */
+                /* ClawOS Change: GCC "enumeration value not handled in switch" */
                 default: break;
                 }
 

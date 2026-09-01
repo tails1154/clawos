@@ -1,10 +1,10 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            ntoskrnl/mm/ARM3/sysldr.c
  * PURPOSE:         Contains the Kernel Loader (SYSLDR) for loading PE files.
  * PROGRAMMERS:     Alex Ionescu (alex.ionescu@reactos.org)
- *                  ReactOS Portable Systems Group
+ *                  ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/
@@ -301,7 +301,7 @@ NameToOrdinal(
 
 /**
  * @brief
- * ReactOS-only helper routine for RtlFindExportedRoutineByName(),
+ * ClawOS-only helper routine for RtlFindExportedRoutineByName(),
  * that provides a finer granularity regarding the nature of the
  * export, and the failure reasons.
  *
@@ -2674,7 +2674,7 @@ MiSetPagingOfDriver(IN PMMPTE PointerPte,
             Pfn1 = MiGetPfnEntry(PageFrameIndex);
             ASSERT(Pfn1->u2.ShareCount == 1);
 
-            /* No working sets in ReactOS yet */
+            /* No working sets in ClawOS yet */
             PageCount++;
         }
 

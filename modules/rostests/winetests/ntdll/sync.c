@@ -983,7 +983,7 @@ static void test_completion_port_scheduling(void)
 #if defined(__REACTOS__)
     if ((GetNTVersion() < _WIN32_WINNT_WIN7) || is_reactos())
     {
-        skip("Skipping completion port scheduling test, because it hangs on Windows 2003, Vista and ReactOS\n");
+        skip("Skipping completion port scheduling test, because it hangs on Windows 2003, Vista and ClawOS\n");
         return;
     }
 #endif

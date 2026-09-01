@@ -208,7 +208,7 @@ FT_BEGIN_HEADER
 
 #ifdef __REACTOS__
   FT_EXPORT( FT_Error )
-  FT_Bitmap_Convert_ReactOS_Hack( FT_Library        library,
+  FT_Bitmap_Convert_ClawOS_Hack( FT_Library        library,
                                   const FT_Bitmap  *source,
                                   FT_Bitmap        *target,
                                   FT_Int            alignment,

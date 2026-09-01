@@ -1,8 +1,8 @@
 /*
- * PROJECT:     ReactOS ComPort Library
+ * PROJECT:     ClawOS ComPort Library
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * PURPOSE:     Header for the ComPort Library
- * COPYRIGHT:   Copyright 2010 ReactOS Portable Systems Group
+ * COPYRIGHT:   Copyright 2010 ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/

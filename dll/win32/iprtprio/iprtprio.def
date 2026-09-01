@@ -1,4 +1,4 @@
-; IPRTPRIO.DLL - ReactOS IP Route Priority API DLL
+; IPRTPRIO.DLL - ClawOS IP Route Priority API DLL
 
 LIBRARY iprtprio.dll
 

@@ -83,13 +83,13 @@ static const PCSTR ARCPathPrompt =
     "multi(0)disk(0)rdisk(0)partition(1)\n"
     "multi(0)disk(0)fdisk(0)";
 
-static const PCSTR ReactOSSystemPathPrompt =
-    "Enter the path to your ReactOS system directory.\n"
+static const PCSTR ClawOSSystemPathPrompt =
+    "Enter the path to your ClawOS system directory.\n"
     "\n"
     "Examples:\n"
     "\\REACTOS\n"
     "\\ROS";
-static const PCSTR ReactOSOptionsPrompt =
+static const PCSTR ClawOSOptionsPrompt =
     "Enter the load options you want passed to the kernel.\n"
     "\n"
     "Examples:\n"
@@ -97,8 +97,8 @@ static const PCSTR ReactOSOptionsPrompt =
     "/FASTDETECT /SOS /NOGUIBOOT\n"
     "/BASEVIDEO /MAXMEM=64\n"
     "/KERNEL=NTKRNLMP.EXE /HAL=HALMPS.DLL";
-static const PCSTR ReactOSSetupOptionsPrompt =
-    "Enter additional load options you want passed to the ReactOS Setup.\n"
+static const PCSTR ClawOSSetupOptionsPrompt =
+    "Enter additional load options you want passed to the ClawOS Setup.\n"
     "These options will supplement those obtained from the TXTSETUP.SIF\n"
     "file, unless you also specify the /SIFOPTIONSOVERRIDE option switch.\n"
     "\n"
@@ -119,8 +119,8 @@ VOID OptionMenuCustomBoot(VOID)
         "Boot Sector (Disk/Partition/File)",
         "Linux",
 #endif
-        "ReactOS",
-        "ReactOS Setup"
+        "ClawOS",
+        "ClawOS Setup"
     };
     static ULONG MenuActionsMap[RTL_NUMBER_OF(CustomBootMenuList)] = {
 #if defined(_M_IX86) || defined(_M_AMD64)
@@ -156,11 +156,11 @@ VOID OptionMenuCustomBoot(VOID)
             EditCustomBootLinux(&OperatingSystem);
             break;
 #endif /* _M_IX86 || _M_AMD64 */
-        case 2: // ReactOS
-            EditCustomBootReactOS(&OperatingSystem, FALSE);
+        case 2: // ClawOS
+            EditCustomBootClawOS(&OperatingSystem, FALSE);
             break;
-        case 3: // ReactOS Setup
-            EditCustomBootReactOS(&OperatingSystem, TRUE);
+        case 3: // ClawOS Setup
+            EditCustomBootClawOS(&OperatingSystem, TRUE);
             break;
     }
 
@@ -482,7 +482,7 @@ EditCustomBootLinux(
 #endif /* _M_IX86 || _M_AMD64 */
 
 VOID
-EditCustomBootReactOS(
+EditCustomBootClawOS(
     IN OUT OperatingSystemItem* OperatingSystem,
     IN BOOLEAN IsSetup)
 {
@@ -491,22 +491,22 @@ EditCustomBootReactOS(
     CHAR SectionName[100];
     CHAR BootDriveString[20];
     CHAR BootPartitionString[20];
-    CHAR ReactOSSystemPath[200];
-    CHAR ReactOSARCPath[200];
-    CHAR ReactOSOptions[200];
+    CHAR ClawOSSystemPath[200];
+    CHAR ClawOSARCPath[200];
+    CHAR ClawOSOptions[200];
 
     RtlZeroMemory(SectionName, sizeof(SectionName));
     RtlZeroMemory(BootDriveString, sizeof(BootDriveString));
     RtlZeroMemory(BootPartitionString, sizeof(BootPartitionString));
-    RtlZeroMemory(ReactOSSystemPath, sizeof(ReactOSSystemPath));
-    RtlZeroMemory(ReactOSARCPath, sizeof(ReactOSARCPath));
-    RtlZeroMemory(ReactOSOptions, sizeof(ReactOSOptions));
+    RtlZeroMemory(ClawOSSystemPath, sizeof(ClawOSSystemPath));
+    RtlZeroMemory(ClawOSARCPath, sizeof(ClawOSARCPath));
+    RtlZeroMemory(ClawOSOptions, sizeof(ClawOSOptions));
 
     if (SectionId != 0)
     {
         /* Load the settings */
-        IniReadSettingByName(SectionId, "SystemPath", ReactOSARCPath, sizeof(ReactOSARCPath));
-        IniReadSettingByName(SectionId, "Options", ReactOSOptions, sizeof(ReactOSOptions));
+        IniReadSettingByName(SectionId, "SystemPath", ClawOSARCPath, sizeof(ClawOSARCPath));
+        IniReadSettingByName(SectionId, "Options", ClawOSOptions, sizeof(ClawOSOptions));
     }
 
     if (SectionId == 0)
@@ -517,30 +517,30 @@ EditCustomBootReactOS(
         if (!UiEditBox(BootPartitionPrompt, BootPartitionString, sizeof(BootPartitionString)))
             return;
 
-        if (!UiEditBox(ReactOSSystemPathPrompt, ReactOSSystemPath, sizeof(ReactOSSystemPath)))
+        if (!UiEditBox(ClawOSSystemPathPrompt, ClawOSSystemPath, sizeof(ClawOSSystemPath)))
             return;
     }
     else
     {
-        if (!UiEditBox(ReactOSSystemPathPrompt, ReactOSARCPath, sizeof(ReactOSARCPath)))
+        if (!UiEditBox(ClawOSSystemPathPrompt, ClawOSARCPath, sizeof(ClawOSARCPath)))
             return;
     }
 
-    if (!UiEditBox(IsSetup ? ReactOSSetupOptionsPrompt : ReactOSOptionsPrompt, ReactOSOptions, sizeof(ReactOSOptions)))
+    if (!UiEditBox(IsSetup ? ClawOSSetupOptionsPrompt : ClawOSOptionsPrompt, ClawOSOptions, sizeof(ClawOSOptions)))
         return;
 
     /* Modify the settings values and return if we were in edit mode */
     if (SectionId != 0)
     {
-        IniModifySettingValue(SectionId, "SystemPath", ReactOSARCPath);
-        IniModifySettingValue(SectionId, "Options", ReactOSOptions);
+        IniModifySettingValue(SectionId, "SystemPath", ClawOSARCPath);
+        IniModifySettingValue(SectionId, "Options", ClawOSOptions);
         return;
     }
 
     /* Generate a unique section name */
     TimeInfo = ArcGetTime();
     RtlStringCbPrintfA(SectionName, sizeof(SectionName),
-                       "CustomReactOS%u%u%u%u%u%u",
+                       "CustomClawOS%u%u%u%u%u%u",
                        TimeInfo->Year, TimeInfo->Day, TimeInfo->Month,
                        TimeInfo->Hour, TimeInfo->Minute, TimeInfo->Second);
 
@@ -549,20 +549,20 @@ EditCustomBootReactOS(
         return;
 
     /* Add the BootType */
-    if (!IniAddSettingValueToSection(SectionId, "BootType", IsSetup ? "ReactOSSetup" : "Windows2003"))
+    if (!IniAddSettingValueToSection(SectionId, "BootType", IsSetup ? "ClawOSSetup" : "Windows2003"))
         return;
 
-    /* Construct the ReactOS ARC system path */
-    ConstructArcPath(ReactOSARCPath, ReactOSSystemPath,
+    /* Construct the ClawOS ARC system path */
+    ConstructArcPath(ClawOSARCPath, ClawOSSystemPath,
                      DriveMapGetBiosDriveNumber(BootDriveString),
                      atoi(BootPartitionString));
 
     /* Add the system path */
-    if (!IniAddSettingValueToSection(SectionId, "SystemPath", ReactOSARCPath))
+    if (!IniAddSettingValueToSection(SectionId, "SystemPath", ClawOSARCPath))
         return;
 
     /* Add the CommandLine */
-    if (!IniAddSettingValueToSection(SectionId, "Options", ReactOSOptions))
+    if (!IniAddSettingValueToSection(SectionId, "Options", ClawOSOptions))
         return;
 
     OperatingSystem->SectionId = SectionId;

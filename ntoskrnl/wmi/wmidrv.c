@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            ntoskrnl/wmi/wmidrv.c
  * PURPOSE:         I/O Windows Management Instrumentation (WMI) Support

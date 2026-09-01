@@ -499,7 +499,7 @@ static void test_LsaGetUserName(void)
     ok(!status, "got %#lx\n", status);
 #ifdef __REACTOS__
     if (status == STATUS_NOT_IMPLEMENTED) {
-        skip("FIXME: LsaGetUserName not implemented on ReactOS!\n");
+        skip("FIXME: LsaGetUserName not implemented on ClawOS!\n");
         return;
     }
 #endif

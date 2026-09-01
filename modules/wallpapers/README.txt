@@ -19,7 +19,7 @@ Wallpapers
 
 Note: Nebula was inspired from concept art by community member taisayshello.
 
-You can download other wallpapers from the "ReactOS Standard Wallpapers" package in the ReactOS Application Manager.
+You can download other wallpapers from the "ClawOS Standard Wallpapers" package in the ClawOS Application Manager.
 
 To include the module in your build folder, run the configure script with the flags -DENABLE_WALLPAPERS=1
 

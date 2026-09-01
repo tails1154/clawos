@@ -1043,7 +1043,7 @@ static void test_debug_loop(int argc, char **argv)
     if (is_reactos()) {
         /* In theory this should be caught below and exit. In practice stack
          * corruption occurs and the test crashes after exiting this function. */
-        skip("FIXME: Skipping test on ReactOS x64 because it is 64bit only!\n");
+        skip("FIXME: Skipping test on ClawOS x64 because it is 64bit only!\n");
         return;
     }
 #endif
@@ -1167,7 +1167,7 @@ static void test_debug_loop_wow64(void)
     /* checking conditions for running this test */
 #if defined(__REACTOS__) && defined(_WIN64)
     if (is_reactos()) {
-        skip("FIXME: ReactOS x64 does not have WoW64 yet!\n");
+        skip("FIXME: ClawOS x64 does not have WoW64 yet!\n");
         return;
     }
 #endif
@@ -2052,7 +2052,7 @@ static void test_debugger(const char *argv0)
          */
 #if defined(__REACTOS__) && defined(_WIN64)
         if (GetNTVersion() >= _WIN32_WINNT_WIN8 || is_reactos()) {
-            skip("These tests run far too long on Windows 8+ x64 and ReactOS x64.\n");
+            skip("These tests run far too long on Windows 8+ x64 and ClawOS x64.\n");
         } else {
 #endif
         for (;;)
@@ -2256,7 +2256,7 @@ static void test_debugger(const char *argv0)
 
 #if defined(__REACTOS__) && defined(_MSC_VER)
     if (is_reactos()) {
-        skip("This test doesn't work correctly on MSVC ReactOS.\n");
+        skip("This test doesn't work correctly on MSVC ClawOS.\n");
     } else {
 #endif
     do

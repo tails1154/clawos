@@ -526,7 +526,7 @@ static void test_DrawTextCalcRect(void)
 
 #ifdef __REACTOS__
         if (is_reactos()) {
-            ok(FALSE, "FIXME: invalid pointer tests crash on ReactOS.\n");
+            ok(FALSE, "FIXME: invalid pointer tests crash on ClawOS.\n");
         } else {
 #endif
         SetLastError(0xdeadbeef);

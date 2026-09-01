@@ -1,5 +1,5 @@
 /*
- * ReactOS Calc (main program)
+ * ClawOS Calc (main program)
  *
  * Copyright 2007-2017, Carlo Bramini
  *

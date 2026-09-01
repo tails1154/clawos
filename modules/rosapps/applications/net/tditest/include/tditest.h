@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS TDI test driver
+ * PROJECT:     ClawOS TDI test driver
  * FILE:        include/tditest.h
  * PURPOSE:     Testing TDI drivers
  */

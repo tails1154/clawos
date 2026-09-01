@@ -1,7 +1,7 @@
 /*
- * PROJECT:         ReactOS SmartCard API
+ * PROJECT:         ClawOS SmartCard API
  * FILE:            dll/win32/winscard/stubs.c
- * PURPOSE:         ReactOS SmartCard API
+ * PURPOSE:         ClawOS SmartCard API
  * PROGRAMMER:      Thomas Weidenmueller <w3seek@reactos.com>
  *
  * UPDATE HISTORY:

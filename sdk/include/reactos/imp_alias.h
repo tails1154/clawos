@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS SDK
+ * PROJECT:     ClawOS SDK
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Helpers to define dllimport slots bound to static functions
  * COPYRIGHT:   Copyright 2026 Ahmed Arif <arif.ing@outlook.com>

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Application compatibility module
+ * PROJECT:     ClawOS Application compatibility module
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Shim matching / data (un)packing
  * COPYRIGHT:   Copyright 2011 André Hentschel
@@ -25,7 +25,7 @@ typedef struct _ShimData
     DWORD dwMagic;
     SDBQUERYRESULT Query;
     WCHAR szLayer[MAX_LAYER_LENGTH];
-    // Start ReactOS specific
+    // Start ClawOS specific
     DWORD dwRosProcessCompatVersion;
 #ifdef _M_AMD64
     PVOID RtlGetCurrentDirectory_U_RtlpMsysDecoy;
@@ -36,11 +36,11 @@ typedef struct _ShimData
 #define REACTOS_COMPATVERSION_IGNOREMANIFEST 0xffffffff
 
 C_ASSERT(SHIMDATA_MAGIC == REACTOS_SHIMDATA_MAGIC);
-C_ASSERT(sizeof(ShimData) == sizeof(ReactOS_ShimData));
-C_ASSERT(offsetof(ShimData, dwMagic) == offsetof(ReactOS_ShimData, dwMagic));
-C_ASSERT(offsetof(ShimData, dwRosProcessCompatVersion) == offsetof(ReactOS_ShimData, dwRosProcessCompatVersion));
+C_ASSERT(sizeof(ShimData) == sizeof(ClawOS_ShimData));
+C_ASSERT(offsetof(ShimData, dwMagic) == offsetof(ClawOS_ShimData, dwMagic));
+C_ASSERT(offsetof(ShimData, dwRosProcessCompatVersion) == offsetof(ClawOS_ShimData, dwRosProcessCompatVersion));
 #ifdef _M_AMD64
-C_ASSERT(offsetof(ShimData, RtlGetCurrentDirectory_U_RtlpMsysDecoy) == offsetof(ReactOS_ShimData, RtlGetCurrentDirectory_U_RtlpMsysDecoy));
+C_ASSERT(offsetof(ShimData, RtlGetCurrentDirectory_U_RtlpMsysDecoy) == offsetof(ClawOS_ShimData, RtlGetCurrentDirectory_U_RtlpMsysDecoy));
 #endif
 
 static BOOL WINAPI SdbpFileExists(LPCWSTR path)

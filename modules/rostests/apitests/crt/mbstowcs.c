@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS api tests
+ * PROJECT:         ClawOS api tests
  * LICENSE:         GPL - See COPYING in the top level directory
  * PURPOSE:         Test for mbstowcs
  */
@@ -11,8 +11,8 @@
 #include <stdlib.h>
 #include <specstrings.h>
 
-#define StrROS "ReactOS"
-#define LStrROS L"ReactOS"
+#define StrROS "ClawOS"
+#define LStrROS L"ClawOS"
 
 START_TEST(mbstowcs)
 {

@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Tests
+ * PROJECT:         ClawOS Tests
  * FILE:            rostests/win32/user32/psmtest/psmtest.c
  * PURPOSE:         Side by side comparison of the undocumented
  *                  LpkPSMTextOut and UserLpkPSMTextOut functions

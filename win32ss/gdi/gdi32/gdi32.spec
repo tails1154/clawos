@@ -609,7 +609,7 @@
 609 stdcall cGetTTFFromFOT(long long long long long long long)
 610 stdcall gdiPlaySpoolStream(long long long long long long)
 
-; ReactOS Display Driver Model
+; ClawOS Display Driver Model
 @ stdcall -version=0x600+ D3DKMTCheckExclusiveOwnership() NtGdiDdDDICheckExclusiveOwnership
 @ stdcall -version=0x600+ D3DKMTCheckMonitorPowerState(ptr) NtGdiDdDDICheckMonitorPowerState
 @ stdcall -version=0x600+ D3DKMTCheckOcclusion(ptr) NtGdiDdDDICheckOcclusion

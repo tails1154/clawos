@@ -1,5 +1,5 @@
 /*
- * ReactOS Realtek 8139 Driver
+ * ClawOS Realtek 8139 Driver
  *
  * Copyright (C) 2013 Cameron Gutman
  *
@@ -144,7 +144,7 @@ MiniportQueryInformation (
 
         case OID_GEN_VENDOR_DESCRIPTION:
         {
-            static UCHAR vendorDesc[] = "ReactOS Team";
+            static UCHAR vendorDesc[] = "ClawOS Team";
             copySource = vendorDesc;
             copyLength = sizeof(vendorDesc);
             break;

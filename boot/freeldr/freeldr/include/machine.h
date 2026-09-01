@@ -56,7 +56,7 @@ typedef struct tagMACHVTBL
     VOID (*VideoGetPaletteColor)(UCHAR Color, UCHAR* Red, UCHAR* Green, UCHAR* Blue);
     VOID (*VideoSync)(VOID);
     VOID (*Beep)(VOID);
-    VOID (*PrepareForReactOS)(VOID);
+    VOID (*PrepareForClawOS)(VOID);
 
     // NOTE: Not in the machine.c ...
     FREELDR_MEMORY_DESCRIPTOR* (*GetMemoryDescriptor)(FREELDR_MEMORY_DESCRIPTOR* Current);
@@ -137,7 +137,7 @@ TIMEINFO* ArcGetTime(VOID);
 ULONG ArcGetRelativeTime(VOID);
 
 PCONFIGURATION_COMPONENT_DATA MachHwDetect(_In_opt_ PCSTR Options);
-VOID MachPrepareForReactOS(VOID);
+VOID MachPrepareForClawOS(VOID);
 VOID MachGetExtendedBIOSData(PULONG ExtendedBIOSDataArea, PULONG ExtendedBIOSDataSize);
 VOID MachVideoGetFontsFromFirmware(PULONG RomFontPointers);
 ULONG MachGetBootSectorLoadAddress(IN UCHAR DriveNumber);

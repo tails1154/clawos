@@ -1,9 +1,9 @@
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS Win32k subsystem
+ * PROJECT:          ClawOS Win32k subsystem
  * PURPOSE:          Focus functions
  * FILE:             win32ss/user/ntuser/focus.c
- * PROGRAMER:        ReactOS Team
+ * PROGRAMER:        ClawOS Team
  */
 
 #include <win32k.h>

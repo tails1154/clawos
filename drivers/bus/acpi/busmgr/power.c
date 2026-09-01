@@ -36,7 +36,7 @@
  */
 
 /*
- * Modified for ReactOS and latest ACPICA
+ * Modified for ClawOS and latest ACPICA
  * Copyright (C)2009  Samuel Serapion
  */
 

@@ -1,6 +1,6 @@
 /*
- *  ReactOS Gdi32
- *  Copyright (C) 2003 ReactOS Team
+ *  ClawOS Gdi32
+ *  Copyright (C) 2003 ClawOS Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public

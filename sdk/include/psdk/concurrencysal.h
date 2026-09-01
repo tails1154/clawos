@@ -3,7 +3,7 @@
  *
  * Standard Annotation Language (SAL) definitions for synchronisation
  *
- * This file is part of the ReactOS PSDK package.
+ * This file is part of the ClawOS PSDK package.
  *
  * Contributors:
  *   Timo Kreuzer (timo.kreuzer@reactos.org)

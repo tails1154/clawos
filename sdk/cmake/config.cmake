@@ -40,13 +40,13 @@ endif()
 
 if(ARCH STREQUAL "i386" OR ARCH STREQUAL "amd64")
     set(TUNE "generic" CACHE STRING
-    "Which CPU ReactOS should be optimized for.")
+    "Which CPU ClawOS should be optimized for.")
 elseif(ARCH STREQUAL "arm")
     set(TUNE "generic-armv7-a" CACHE STRING
-    "Which CPU ReactOS should be optimized for.")
+    "Which CPU ClawOS should be optimized for.")
 elseif(ARCH STREQUAL "arm64")
     set(TUNE "generic" CACHE STRING
-    "Which CPU ReactOS should be optimized for.")
+    "Which CPU ClawOS should be optimized for.")
 endif()
 
 set(OPTIMIZE "4" CACHE STRING
@@ -65,7 +65,7 @@ set(LTCG FALSE CACHE BOOL
 
 set(GDB FALSE CACHE BOOL
 "Whether to use by default KDGDB.DLL instead of KDCOM.DLL for debugging with GDB.
-Mainly used for cloud-based ReactOS development using Gitpod and Docker.
+Mainly used for cloud-based ClawOS development using Gitpod and Docker.
 If you don't use GDB, don't enable this.")
 
 if(CMAKE_BUILD_TYPE STREQUAL "Release")

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS UEFI Support
+ * PROJECT:     ClawOS UEFI Support
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Apple Graphics Info Protocol
  * COPYRIGHT:   Copyright 2026 Sylas Hollander <distrohopper39b.business@gmail.com>

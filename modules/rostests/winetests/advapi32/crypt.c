@@ -399,7 +399,7 @@ static void test_incorrect_api_usage(void)
 
 #if defined(__REACTOS__) && defined(_M_AMD64)
     if (is_reactos()) {
-        ok(FALSE, "FIXME: The following tests normally completes on ReactOS x64, but not after being fuzzed from other tests in our test suite.\n");
+        ok(FALSE, "FIXME: The following tests normally completes on ClawOS x64, but not after being fuzzed from other tests in our test suite.\n");
         return;
     }
 #endif

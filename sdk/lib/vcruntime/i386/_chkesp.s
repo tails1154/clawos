@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS vcruntime library
+ * PROJECT:     ClawOS vcruntime library
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Implementation of _chkesp
  * COPYRIGHT:   Copyright 2026 Timo Kreuzer <timo.kreuzer@reactos.org>

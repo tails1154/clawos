@@ -1805,7 +1805,7 @@ static void test_file_inherit( const char* selfname )
 #ifdef __REACTOS__
     if (is_reactos())
     {
-        skip("Skipping test_file_inherit pipe test, because it hangs on ReactOS\n");
+        skip("Skipping test_file_inherit pipe test, because it hangs on ClawOS\n");
     }
     else
     {
@@ -2526,7 +2526,7 @@ static void test_pipes(const char* selfname)
 #ifdef __REACTOS__
     if (is_reactos())
     {
-        win_skip("Skipping test_pipes, because it hangs on ReactOS\n");
+        win_skip("Skipping test_pipes, because it hangs on ClawOS\n");
         return;
     }
 #endif

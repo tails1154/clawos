@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS Boot Loader
+ * PROJECT:         ClawOS Boot Loader
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            boot/freeldr/freeldr/arch/arm/macharm.c
  * PURPOSE:         Provides abstraction between the ARM Boot Loader and FreeLDR
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/
@@ -88,7 +88,7 @@ ArmInit(IN PARM_BOARD_CONFIGURATION_BLOCK BootContext)
 }
 
 VOID
-ArmPrepareForReactOS(VOID)
+ArmPrepareForClawOS(VOID)
 {
     return;
 }
@@ -127,7 +127,7 @@ ArmHwDetect(
     RamDiskInitialize(TRUE, NULL, NULL);
 
     /* Fill out the ARC disk block */
-    AddReactOSArcDiskInfo("ramdisk(0)", NULL, 0xBADAB00F, 0xDEADBABE, TRUE);
+    AddClawOSArcDiskInfo("ramdisk(0)", NULL, 0xBADAB00F, 0xDEADBABE, TRUE);
     ASSERT(reactos_disk_count == 1);
 
     /* Return the root node */
@@ -227,7 +227,7 @@ MachInit(IN PCCH CommandLine)
     }
 
     /* Setup generic ARM routines for all boards */
-    MachVtbl.PrepareForReactOS = ArmPrepareForReactOS;
+    MachVtbl.PrepareForClawOS = ArmPrepareForClawOS;
     MachVtbl.GetMemoryMap = ArmMemGetMemoryMap;
     MachVtbl.InitializeBootDevices = ArmInitializeBootDevices;
     MachVtbl.HwDetect = ArmHwDetect;

@@ -3463,7 +3463,7 @@ static void test_namedpipe_process_id(void)
     BOOL ret;
 
 #if defined(__REACTOS__) && DLL_EXPORT_VERSION >= 0x600
-    /* FIXME: GetNamedPipeClientProcessId is a STUB on ReactOS. */
+    /* FIXME: GetNamedPipeClientProcessId is a STUB on ClawOS. */
     if (is_reactos() || !pGetNamedPipeClientProcessId)
 #else
     if (!pGetNamedPipeClientProcessId)
@@ -3606,7 +3606,7 @@ static void test_namedpipe_session_id(void)
     BOOL ret;
 
 #if defined(__REACTOS__) && DLL_EXPORT_VERSION >= 0x600
-    /* FIXME: GetNamedPipeClientSessionId is a STUB on ReactOS. */
+    /* FIXME: GetNamedPipeClientSessionId is a STUB on ClawOS. */
     if (is_reactos() || !pGetNamedPipeClientSessionId)
 #else
     if (!pGetNamedPipeClientSessionId)
@@ -4400,7 +4400,7 @@ START_TEST(pipe)
     test_GetOverlappedResultEx();
 #ifdef __REACTOS__
     if (is_reactos() || GetNTVersion() <= _WIN32_WINNT_WS03) {
-        skip("These next tests crash or hang on ReactOS and Windows Server 2003.\n");
+        skip("These next tests crash or hang on ClawOS and Windows Server 2003.\n");
         return;
     }
 #endif

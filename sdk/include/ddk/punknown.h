@@ -1,5 +1,5 @@
 /*
-    ReactOS Kernel-Mode COM
+    ClawOS Kernel-Mode COM
     by Andrew Greenwood
 
     This file is in the public domain.

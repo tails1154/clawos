@@ -23,7 +23,7 @@
 /* PROTOTYPES ***************************************************************/
 
 VOID
-AddReactOSArcDiskInfo(
+AddClawOSArcDiskInfo(
     _In_ PCSTR ArcName,
     _In_opt_ PGUID GptDiskGuid,
     _In_ ULONG Signature,

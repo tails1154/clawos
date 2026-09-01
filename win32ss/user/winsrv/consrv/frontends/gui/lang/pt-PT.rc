@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Console Server
+ * PROJECT:     ClawOS Console Server
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Portuguese (Portugal) resource file
  * TRANSLATOR:  Copyright 2019-2026 Jose Carlos Jesus <zecarlos1957@hotmail.com>
@@ -27,7 +27,7 @@ BEGIN
     IDS_SCROLLUP "Rolar para cima"
     IDS_SCROLLDOWN "Rolar para baixo"
 */
-    IDS_TERMINAL_TITLE "Consola ReactOS"
+    IDS_TERMINAL_TITLE "Consola ClawOS"
 END
 
 STRINGTABLE

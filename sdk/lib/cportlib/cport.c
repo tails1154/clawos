@@ -1,8 +1,8 @@
 /*
- * PROJECT:     ReactOS ComPort Library
+ * PROJECT:     ClawOS ComPort Library
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * PURPOSE:     Provides a serial port library for KDCOM, INIT, and FREELDR
- * COPYRIGHT:   Copyright 2010 ReactOS Portable Systems Group
+ * COPYRIGHT:   Copyright 2010 ClawOS Portable Systems Group
  *              Copyright 2012-2026 Hermès Bélusca-Maïto <hermes.belusca-maito@reactos.org>
  *
  * NOTE: This code is used by Headless Support (Ntoskrnl.exe and Osloader.exe)

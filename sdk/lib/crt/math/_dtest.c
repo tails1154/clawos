@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS CRT
+ * PROJECT:     ClawOS CRT
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Implementation of _dtest.
  * COPYRIGHT:   Copyright 2025 Timo Kreuzer <timo.kreuzer@reactos.org>

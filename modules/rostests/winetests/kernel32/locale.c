@@ -2779,7 +2779,7 @@ static void test_lcmapstring_unicode(lcmapstring_wrapper func_ptr, const char *f
     /* test contents with short buffer */
 #if defined(__REACTOS__) && defined(_WIN64)
     if (is_reactos()) {
-        ok(FALSE, "FIXME: These tests crash on ReactOS x64\n");
+        ok(FALSE, "FIXME: These tests crash on ClawOS x64\n");
     } else {
 #endif
     memset( buf, 0xcc, sizeof(buf) );
@@ -2993,7 +2993,7 @@ static void test_LocaleNameToLCID(void)
     }
 #if defined(__REACTOS__) && defined(_WIN64)
     if (is_reactos()) {
-        ok(FALSE, "FIXME: Most of test_LocaleNameToLCID() crashes on ReactOS x64\n");
+        ok(FALSE, "FIXME: Most of test_LocaleNameToLCID() crashes on ClawOS x64\n");
         return;
     }
 #endif
@@ -5302,7 +5302,7 @@ static void test_GetCPInfo(void)
     ok( GetLastError() == ERROR_INVALID_PARAMETER, "wrong error %lu\n", GetLastError() );
 
 #if defined(__REACTOS__) && DLL_EXPORT_VERSION >= 0x600
-    /* FIXME: NtGetNlsSectionPtr is a STUB on ReactOS! */
+    /* FIXME: NtGetNlsSectionPtr is a STUB on ClawOS! */
     if (!is_reactos() && pNtGetNlsSectionPtr)
 #else
     if (pNtGetNlsSectionPtr)
@@ -5891,7 +5891,7 @@ static void test_Idn(void)
     FILE *f;
 
 #if defined(__REACTOS__) && DLL_EXPORT_VERSION >= 0x600
-    /* FIXME: Idn functions are STUBS on ReactOS */
+    /* FIXME: Idn functions are STUBS on ClawOS */
     if (is_reactos() || !pIdnToAscii || !pIdnToUnicode || !pIdnToNameprepUnicode)
 #else
     if (!pIdnToAscii || !pIdnToUnicode || !pIdnToNameprepUnicode)
@@ -6057,7 +6057,7 @@ static void test_GetLocaleInfoEx(void)
 
 #if defined(__REACTOS__) && defined(_WIN64)
         if (is_reactos()) {
-            ok(FALSE, "FIXME: These tests crash on ReactOS x64\n");
+            ok(FALSE, "FIXME: These tests crash on ClawOS x64\n");
         } else {
 #endif
         while (*ptr->name)
@@ -7245,7 +7245,7 @@ static void test_FindNLSStringEx(void)
     unsigned int i;
 
 #if defined(__REACTOS__) && DLL_EXPORT_VERSION >= 0x600
-    /* FIXME: FindNLSStringEx is a STUB on ReactOS! */
+    /* FIXME: FindNLSStringEx is a STUB on ClawOS! */
     if (is_reactos() || !pFindNLSStringEx)
 #else
     if (!pFindNLSStringEx)
@@ -8167,7 +8167,7 @@ static void test_NLSVersion(void)
     ok( GetLastError() == ERROR_INVALID_PARAMETER, "wrong error %lu\n", GetLastError() );
 
 #ifdef __REACTOS__
-    /* HACK: ReactOS's implementation for GetNLSVersionEx is a STUB! */
+    /* HACK: ClawOS's implementation for GetNLSVersionEx is a STUB! */
     if (pGetNLSVersionEx && !is_reactos())
 #else
     if (pGetNLSVersionEx)

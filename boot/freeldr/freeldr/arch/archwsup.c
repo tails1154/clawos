@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Boot Loader (FreeLDR)
+ * PROJECT:         ClawOS Boot Loader (FreeLDR)
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            boot/freeldr/freeldr/arch/archwsup.c
  * PURPOSE:         Routines for ARC Hardware Tree and Configuration Data
@@ -74,7 +74,7 @@ ARC_DISK_SIGNATURE_EX reactos_arc_disk_info[32];
 /* FUNCTIONS ******************************************************************/
 
 VOID
-AddReactOSArcDiskInfo(
+AddClawOSArcDiskInfo(
     _In_ PCSTR ArcName,
     _In_opt_ PGUID GptDiskGuid,
     _In_ ULONG Signature,

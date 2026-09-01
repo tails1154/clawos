@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS NDIS library
+ * PROJECT:     ClawOS NDIS library
  * FILE:        ndis/misc.c
  */
 

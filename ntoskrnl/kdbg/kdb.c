@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS kernel
+ * PROJECT:         ClawOS kernel
  * FILE:            ntoskrnl/kdbg/kdb.c
  * PURPOSE:         Kernel Debugger
  *

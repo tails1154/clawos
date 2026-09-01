@@ -1,6 +1,6 @@
 /*
- *  ReactOS Services
- *  Copyright (C) 2015 ReactOS Team
+ *  ClawOS Services
+ *  Copyright (C) 2015 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS Services
+ * PROJECT:          ClawOS Services
  * FILE:             base/services/wkssvc/rpcserver.c
  * PURPOSE:          Workstation service
  * PROGRAMMER:       Eric Kohl

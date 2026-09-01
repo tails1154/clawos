@@ -1,5 +1,5 @@
 /*
-    ReactOS Operating System
+    ClawOS Operating System
     Sound Blaster KS Driver
 
     AUTHORS:

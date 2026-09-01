@@ -1185,7 +1185,7 @@ static void test_profile_struct(void)
     /* Test deleting struct */
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: Deleting private profile struct crashes on ReactOS!\n");
+        ok(FALSE, "FIXME: Deleting private profile struct crashes on ClawOS!\n");
     } else {
 #endif
     ret = WritePrivateProfileStructA("s", "key", NULL, sizeof("abacus"), "./winetest.ini");

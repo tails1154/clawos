@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS shutdown/logoff utility
+ * PROJECT:         ClawOS shutdown/logoff utility
  * PURPOSE:         Precompiled header
  */
 

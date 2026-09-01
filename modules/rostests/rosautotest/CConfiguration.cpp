@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Automatic Testing Utility
+ * PROJECT:     ClawOS Automatic Testing Utility
  * LICENSE:     GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
  * PURPOSE:     Class for managing all the configuration parameters
  * COPYRIGHT:   Copyright 2009-2011 Colin Finck (colin@reactos.org)
@@ -28,10 +28,10 @@ CConfiguration::CConfiguration()
 {
     WCHAR Interactive[32];
 
-    /* Check if we are running under ReactOS by calling our versionhelper function.
+    /* Check if we are running under ClawOS by calling our versionhelper function.
        We cannot use the name of the SystemRoot folder, because bootcdregtest is using "c:\Windows".
-       Note: "IsReactOS()" without "::" would resolve to CConfiguration::IsReactOS(). */
-    m_IsReactOS = ::IsReactOS();
+       Note: "IsClawOS()" without "::" would resolve to CConfiguration::IsClawOS(). */
+    m_IsClawOS = ::IsClawOS();
 
     if(GetEnvironmentVariableW(L"WINETEST_INTERACTIVE", Interactive, _countof(Interactive)))
         m_IsInteractive = _wtoi(Interactive);
@@ -150,7 +150,7 @@ CConfiguration::GetSystemInformation()
 
     ss << "&platform=";
 
-    if(m_IsReactOS)
+    if(m_IsClawOS)
     {
         ss << "reactos";
     }

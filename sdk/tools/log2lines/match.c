@@ -1,5 +1,5 @@
 /*
- * ReactOS log2lines
+ * ClawOS log2lines
  * Written by Jan Roeloffzen
  *
  * - Custom match routines

@@ -1,18 +1,18 @@
 # Coding Style
 
-This article describes general coding style guidelines, which should be used for new ReactOS code. These guidelines apply exclusively to C and C++ source files. The Members of ReactOS agreed on this document in the October 2013 meeting.
+This article describes general coding style guidelines, which should be used for new ClawOS code. These guidelines apply exclusively to C and C++ source files. The Members of ClawOS agreed on this document in the October 2013 meeting.
 
-As much existing ReactOS code as possible should be converted to this style unless there are reasons against doing this (like if the code is going to be rewritten from scratch in the near future). See [Notes on reformatting existing code](#notes-on-reformatting-existing-code) for more details.
+As much existing ClawOS code as possible should be converted to this style unless there are reasons against doing this (like if the code is going to be rewritten from scratch in the near future). See [Notes on reformatting existing code](#notes-on-reformatting-existing-code) for more details.
 
 Code synchronized with other sources (like Wine) must not be rewritten. [3rd Party Files.txt](https://github.com/reactos/reactos/blob/master/media/doc/3rd%20Party%20Files.txt) and [WINESYNC.txt](https://github.com/reactos/reactos/blob/master/media/doc/WINESYNC.txt) files can be used for tracking synchronized files.
 
 ## File Structure
 
-1. Every ReactOS source code file should include a file header like this:
+1. Every ClawOS source code file should include a file header like this:
 
 ```
 /*
- * PROJECT:     ReactOS Kernel
+ * PROJECT:     ClawOS Kernel
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Does cool things like Memory Management
  * COPYRIGHT:   Copyright 2017 Arno Nymous <abc@mailaddress.com>
@@ -27,7 +27,7 @@ You should add yourself to the `COPYRIGHT` section of a file if you did a major 
 
 `FILE` line of the old header should be removed.
 
-2. [Doxygen](https://doxygen.reactos.org/) documentation generator is used for ReactOS codebase, so use a proper header for functions, see [API Documentation](https://reactos.org/wiki/Documentation_Guidelines#API_Documentation) for details.
+2. [Doxygen](https://doxygen.reactos.org/) documentation generator is used for ClawOS codebase, so use a proper header for functions, see [API Documentation](https://reactos.org/wiki/Documentation_Guidelines#API_Documentation) for details.
 
 ## Indentation and line width
 

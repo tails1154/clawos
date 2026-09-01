@@ -1873,7 +1873,7 @@ static void test_find_surrogate(HANDLE handle, const GUID *clsid, const WCHAR *n
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: This test crashes on ReactOS\n");
+        ok(FALSE, "FIXME: This test crashes on ClawOS\n");
         return;
     }
 #endif
@@ -1941,7 +1941,7 @@ static void test_find_progid_redirection(HANDLE handle, const GUID *clsid, const
 
 #if defined(__REACTOS__) && defined(_MSC_VER)
     if (is_reactos()) {
-        ok(FALSE, "FIXME: This crashes on MSVC ReactOS\n");
+        ok(FALSE, "FIXME: This crashes on MSVC ClawOS\n");
         return;
     }
 #endif
@@ -2701,7 +2701,7 @@ static void test_findsectionstring(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        trace("HACK: ReactOS crashes on DeactivateActCtx() below.\n");
+        trace("HACK: ClawOS crashes on DeactivateActCtx() below.\n");
         ret = FALSE;
     } else
 #endif
@@ -3196,7 +3196,7 @@ static void test_ZombifyActCtx(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        trace("HACK: ReactOS crashes on DeactivateActCtx() below.\n");
+        trace("HACK: ClawOS crashes on DeactivateActCtx() below.\n");
         ret = FALSE;
     } else
 #endif
@@ -3438,7 +3438,7 @@ static void test_settings(void)
     BOOL ret;
 
 #if defined(__REACTOS__) && DLL_EXPORT_VERSION >= 0x600
-    /* FIXME: QueryActCtxSettingsW() is a STUB on ReactOS. */
+    /* FIXME: QueryActCtxSettingsW() is a STUB on ClawOS. */
     if (is_reactos() || !pQueryActCtxSettingsW)
 #else
     if (!pQueryActCtxSettingsW)

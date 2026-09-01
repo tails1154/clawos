@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Explorer
+ * PROJECT:     ClawOS Explorer
  * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
  * PURPOSE:     AppBar implementation
  * COPYRIGHT:   Copyright 2025 Katayama Hirofumi MZ (katayama.hirofumi.mz@gmail.com)

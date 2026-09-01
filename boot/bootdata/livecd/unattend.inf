@@ -1,7 +1,7 @@
 [Unattend]
-Signature = "$ReactOS$"
+Signature = "$ClawOS$"
 
-; Set UnattendSetupEnabled to yes in order to immediately start the ReactOS installer.
+; Set UnattendSetupEnabled to yes in order to immediately start the ClawOS installer.
 ; yes - unattend setup enabled
 ; no - unattend setup disabled
 UnattendSetupEnabled = no
@@ -10,7 +10,7 @@ UnattendSetupEnabled = no
 ; See hivesys.inf for available languages.
 LocaleID = 409
 
-; Enable this section to enable the default ReactOS theme.
-;[Shell]
-;DefaultThemesOff = no
-;CustomDefaultThemeFile = "%WINDIR%\Resources\Themes\Lautus\lautus.msstyles"
+; Enable this section to apply a different default shell theme.
+[Shell]
+DefaultThemesOff = no
+CustomDefaultThemeFile = "%WINDIR%\Resources\Themes\Mizu\mizu.msstyles"

@@ -1,5 +1,5 @@
 /*
- *  ReactOS ps - process list console viewer
+ *  ClawOS ps - process list console viewer
  *
  *  ps.c
  *

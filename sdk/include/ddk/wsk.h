@@ -3,7 +3,7 @@
  *
  * Windows Sockets Kernel-Mode Interface
  *
- * This file is part of the ReactOS DDK package.
+ * This file is part of the ClawOS DDK package.
  *
  * Contributors:
  *   Timo Kreuzer (timo.kreuzer@reactos.org)

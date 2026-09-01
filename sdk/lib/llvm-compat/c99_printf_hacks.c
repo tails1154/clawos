@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS SDK
+ * PROJECT:     ClawOS SDK
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     C99 printf-family shims for llvm-mingw runtime libraries
  * COPYRIGHT:   Copyright 2026 Ahmed Arif <arif.ing@outlook.com>

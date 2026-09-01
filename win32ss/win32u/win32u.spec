@@ -1,7 +1,7 @@
 ;
-; ReactOS Operating System
+; ClawOS Operating System
 ;
-; This file contains all win32k native api functions from ReactOS
+; This file contains all win32k native api functions from ClawOS
 ; Unsupported functions are commented out
 ;
 

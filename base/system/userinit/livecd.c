@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS Userinit Logon Application
+ * PROJECT:     ClawOS Userinit Logon Application
  * FILE:        base/system/userinit/livecd.c
  * PROGRAMMERS: Eric Kohl
  */
@@ -824,7 +824,7 @@ ParseUnattend(
         return;
     }
 
-    if (_wcsicmp(Buffer, L"$ReactOS$") && _wcsicmp(Buffer, L"$Windows NT$"))
+    if (_wcsicmp(Buffer, L"$ClawOS$") && _wcsicmp(Buffer, L"$Windows NT$"))
     {
         TRACE("Unknown signature: %S\n", Buffer);
         return;

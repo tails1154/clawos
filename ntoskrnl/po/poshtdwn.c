@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            ntoskrnl/po/poshtdwn.c
  * PURPOSE:         Power Manager Shutdown Code
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES ******************************************************************/
@@ -211,7 +211,7 @@ PopShutdownSystem(IN POWER_ACTION SystemAction)
             /* Call shutdown handler */
             //PopInvokeSystemStateHandler(PowerStateShutdownOff, NULL);
 
-            /* ReactOS Hack */
+            /* ClawOS Hack */
             PopSetSystemPowerState(PowerSystemShutdown, SystemAction);
             PopShutdownHandler();
 

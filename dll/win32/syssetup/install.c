@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:         See COPYING in the top level directory
- * PROJECT:           ReactOS system libraries
+ * PROJECT:           ClawOS system libraries
  * PURPOSE:           System setup
  * FILE:              dll/win32/syssetup/install.c
  * PROGRAMER:         Eric Kohl
@@ -65,7 +65,7 @@ FatalError(char *pszFmt,...)
     strcat(szBuffer, "\nRebooting now!");
     MessageBoxA(NULL,
                 szBuffer,
-                "ReactOS Setup",
+                "ClawOS Setup",
                 MB_OK);
 }
 
@@ -1016,7 +1016,7 @@ EnableVisualTheme(
  * Pre-process unattended file to apply early settings.
  *
  * @param[in]   IsInstall
- * TRUE if this is ReactOS installation, invoked from InstallReactOS(),
+ * TRUE if this is ClawOS installation, invoked from InstallClawOS(),
  * FALSE if this is run as part of LiveCD, invoked form InstallLiveCD().
  **/
 static VOID
@@ -1051,7 +1051,7 @@ PreprocessUnattend(
 
     if (!bDefaultThemesOff)
     {
-        /* Retrieve the complete path to a .theme (or for ReactOS, a .msstyles) file */
+        /* Retrieve the complete path to a .theme (or for ClawOS, a .msstyles) file */
         if (!GetPrivateProfileStringW(L"Shell", L"CustomDefaultThemeFile", NULL, szValue, _countof(szValue), szPath) || !*szValue)
             bDefaultThemesOff = TRUE; // None specified, fall back to the classic theme.
     }
@@ -1203,7 +1203,7 @@ InstallLiveCD(VOID)
 error:
     MessageBoxW(NULL,
                 L"Failed to load LiveCD! You can shutdown your computer, or press ENTER to reboot.",
-                L"ReactOS LiveCD",
+                L"ClawOS LiveCD",
                 MB_OK);
     // HACK: This shouldn't be done here, but by the caller of InstallWindowsNt()
     /* Enable the shutdown privilege and reboot the machine */
@@ -1591,14 +1591,14 @@ SaveDefaultUserHive(VOID)
 
 static
 DWORD
-InstallReactOS(VOID)
+InstallClawOS(VOID)
 {
     BOOL ret;
     DWORD dwHotkeyThreadId = 0;
     WCHAR szBuffer[MAX_PATH];
 
     InitializeSetupActionLog(FALSE);
-    LogItem(NULL, L"Installing ReactOS");
+    LogItem(NULL, L"Installing ClawOS");
 
     CreateTempDir(L"TEMP");
     CreateTempDir(L"TMP");
@@ -1692,7 +1692,7 @@ InstallReactOS(VOID)
     if (dwHotkeyThreadId)
         PostThreadMessage(dwHotkeyThreadId, WM_QUIT, 0, 0);
 
-    LogItem(NULL, L"Installing ReactOS done");
+    LogItem(NULL, L"Installing ClawOS done");
     TerminateSetupActionLog();
 
     if (AdminInfo.Name != NULL)
@@ -1716,7 +1716,7 @@ Quit:
 
 /*
  * Standard Windows-compatible export, which dispatches
- * to either 'InstallReactOS' or 'InstallLiveCD'.
+ * to either 'InstallClawOS' or 'InstallLiveCD'.
  */
 INT
 WINAPI
@@ -1735,7 +1735,7 @@ InstallWindowsNt(INT argc, WCHAR** argv)
             // NOTE: On Windows, "mini" means "minimal UI", and can be used
             // in addition to "newsetup"; these options are not exclusive.
             if (_wcsicmp(p, L"newsetup") == 0)
-                return (INT)InstallReactOS();
+                return (INT)InstallClawOS();
             else if (_wcsicmp(p, L"mini") == 0)
                 return (INT)InstallLiveCD();
 

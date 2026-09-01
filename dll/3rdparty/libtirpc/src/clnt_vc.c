@@ -977,7 +977,7 @@ read_vc(ctp, buf, len)
 #ifndef __REACTOS__
 		switch (poll(&fd, 1, milliseconds)) {
 #else
-		/* ReactOS: use select instead of poll */
+		/* ClawOS: use select instead of poll */
 		fd_set infd;
 		struct timeval timeout;
 

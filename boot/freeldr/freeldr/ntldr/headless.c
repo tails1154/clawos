@@ -1,8 +1,8 @@
 /*
- * PROJECT:     ReactOS Boot Loader
+ * PROJECT:     ClawOS Boot Loader
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * PURPOSE:     Provides support for Windows Emergency Management Services
- * COPYRIGHT:   Copyright 2010 ReactOS Portable Systems Group
+ * COPYRIGHT:   Copyright 2010 ClawOS Portable Systems Group
  *              Copyright 2022-2026 Hermès Bélusca-Maïto <hermes.belusca-maito@reactos.org>
  */
 

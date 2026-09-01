@@ -3518,7 +3518,7 @@ static void test_DbgPrint(void)
 #ifdef __REACTOS__
     if (is_reactos())
     {
-        skip("DbgPrint with a debugger attached is broken on ReactOS\n");
+        skip("DbgPrint with a debugger attached is broken on ClawOS\n");
         return;
     }
 #endif

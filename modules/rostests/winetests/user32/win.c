@@ -2916,7 +2916,7 @@ static void test_icons(void)
 
 #ifdef __REACTOS__
     if (GetNTVersion() <= _WIN32_WINNT_WS03) {
-        skip("test_icons() crashes on Windows Server 2003 and ReactOS.\n");
+        skip("test_icons() crashes on Windows Server 2003 and ClawOS.\n");
         return;
     }
 #endif
@@ -8650,7 +8650,7 @@ static void test_gettext(void)
     /* GetWindowText doesn't crash */
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: These tests crash on ReactOS!\n");
+        ok(FALSE, "FIXME: These tests crash on ClawOS!\n");
     } else {
 #endif
     r = GetWindowTextA( hwnd, (LPSTR)0x10, 0x1000 );
@@ -9378,7 +9378,7 @@ static void test_layered_window(void)
     ok( ret, "SetLayeredWindowAttributes should succeed on layered window\n" );
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: This hangs on ReactOS!\n");
+        ok(FALSE, "FIXME: This hangs on ClawOS!\n");
     } else {
 #endif
     while (GetMessageA(&msg, 0, 0, 0))

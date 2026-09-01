@@ -1775,24 +1775,24 @@ static VOID FixupServiceBinaryPath(
     IN OUT LPWSTR *ServiceBinary)
 {
     LPWSTR Buffer;
-    WCHAR ReactOSDir[MAX_PATH];
+    WCHAR ClawOSDir[MAX_PATH];
     DWORD RosDirLength, ServiceLength, Win32Length;
 
-    GetWindowsDirectoryW(ReactOSDir, MAX_PATH);
-    RosDirLength = strlenW(ReactOSDir);
+    GetWindowsDirectoryW(ClawOSDir, MAX_PATH);
+    RosDirLength = strlenW(ClawOSDir);
     ServiceLength = strlenW(*ServiceBinary);
 
     /* Check and fix two things:
-       1. Get rid of C:\ReactOS and use relative
+       1. Get rid of C:\ClawOS and use relative
           path instead.
        2. Add %SystemRoot% for Win32 services */
 
     if (ServiceLength < RosDirLength)
         return;
 
-    if (!wcsnicmp(*ServiceBinary, ReactOSDir, RosDirLength))
+    if (!wcsnicmp(*ServiceBinary, ClawOSDir, RosDirLength))
     {
-        /* Yes, the first part is the C:\ReactOS\, just skip it */
+        /* Yes, the first part is the C:\ClawOS\, just skip it */
         MoveMemory(*ServiceBinary, *ServiceBinary + RosDirLength + 1,
             (ServiceLength - RosDirLength) * sizeof(WCHAR));
 

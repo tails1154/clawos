@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS SDK
+ * PROJECT:     ClawOS SDK
  * LICENSE:     Dual-licensed:
  *              LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
  *              MIT (https://spdx.org/licenses/MIT)

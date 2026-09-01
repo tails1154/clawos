@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Winlogon
+ * PROJECT:         ClawOS Winlogon
  * FILE:            base/system/winlogon/rpcserver.c
  * PURPOSE:         RPC server interface for the remote registry calls
  * PROGRAMMERS:     Eric Kohl

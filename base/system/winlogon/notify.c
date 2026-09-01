@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Winlogon
+ * PROJECT:         ClawOS Winlogon
  * FILE:            base/system/winlogon/notify.c
  * PURPOSE:         Logon notifications
  * PROGRAMMERS:     Eric Kohl
@@ -268,7 +268,7 @@ AddNotificationDll(
         /* Bail out if the DLL should not be loaded in safe-boot mode.
          * NOTE: On Win2000 and later, the value is always overridden
          * to TRUE, and the DLL is loaded unconditionally. This defeats
-         * the whole purpose of this feature... In ReactOS we restore it! */
+         * the whole purpose of this feature... In ClawOS we restore it! */
         if (!bSafeMode)
         {
             RegCloseKey(hDllKey);

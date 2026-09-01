@@ -1,5 +1,5 @@
 ; defltsv.inf
-; Default security settings for ReactOS Server
+; Default security settings for ClawOS Server
 
 [Version]
 Signature = "$Windows NT$"

@@ -1,5 +1,5 @@
 /*
-    ReactOS Kernel-Mode COM
+    ClawOS Kernel-Mode COM
     IUnknown implementations
 
     LICENSE

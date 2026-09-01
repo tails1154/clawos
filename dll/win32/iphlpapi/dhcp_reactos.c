@@ -1,8 +1,8 @@
 /*
- * PROJECT:     ReactOS Networking
+ * PROJECT:     ClawOS Networking
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        lib/iphlpapi/dhcp_reactos.c
- * PURPOSE:     DHCP helper functions for ReactOS
+ * PURPOSE:     DHCP helper functions for ClawOS
  * COPYRIGHT:   Copyright 2006 Ge van Geldorp <gvg@reactos.org>
  */
 

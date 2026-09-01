@@ -8817,7 +8817,7 @@ START_TEST(typelib)
 #ifdef __REACTOS__ /* FIXME: Inspect */
     if (is_reactos())
     {
-        trace("test_dep(SYS_WIN64) crashes in ReactOS.\n");
+        trace("test_dep(SYS_WIN64) crashes in ClawOS.\n");
     }
     else
 #endif
@@ -8827,7 +8827,7 @@ START_TEST(typelib)
 #ifdef __REACTOS__ /* FIXME: Inspect */
     if (is_reactos())
     {
-        trace("test_dep(SYS_WIN32) crashes in ReactOS.\n");
+        trace("test_dep(SYS_WIN32) crashes in ClawOS.\n");
     }
     else
 #endif

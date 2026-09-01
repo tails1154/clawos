@@ -3,9 +3,9 @@
  *
  * Windows NT native definitions for user mode
  *
- * This file is part of the ReactOS PSDK package.
+ * This file is part of the ClawOS PSDK package.
  *
- * This file is auto-generated from ReactOS XDK.
+ * This file is auto-generated from ClawOS XDK.
  *
  * THIS SOFTWARE IS NOT COPYRIGHTED
  *

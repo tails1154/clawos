@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS HAL
+ * PROJECT:         ClawOS HAL
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            hal/halx86/acpi/halpnpdd.c
  * PURPOSE:         HAL Plug and Play Device Driver
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Certificate Manager
+ * PROJECT:     ClawOS Certificate Manager
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Main header file
  * COPYRIGHT:   Copyright 2025 Mark Jansen <mark.jansen@reactos.org>

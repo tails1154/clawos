@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS api tests
+ * PROJECT:         ClawOS api tests
  * LICENSE:         GPLv2+ - See COPYING in the top level directory
  * PURPOSE:         Test for GetCPInfo
  * PROGRAMMER:      Timo Kreuzer <timo.kreuzer@reactos.org>

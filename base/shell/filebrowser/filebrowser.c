@@ -1,5 +1,5 @@
 /*
- * ReactOS Explorer
+ * ClawOS Explorer
  *
  * Copyright 2014 Giannis Adamopoulos
  *

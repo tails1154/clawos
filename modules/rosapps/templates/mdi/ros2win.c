@@ -1,5 +1,5 @@
 /*
- *  ReactOS to Win32 entry points for testing
+ *  ClawOS to Win32 entry points for testing
  *
  *  ros2win.c
  *

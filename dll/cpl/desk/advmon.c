@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Display Control Panel
+ * PROJECT:         ClawOS Display Control Panel
  * PURPOSE:         Advanced monitor/display settings
  */
 

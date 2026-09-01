@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS HAL
+ * PROJECT:         ClawOS HAL
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            hal/halarm/omap3/halinit_up.c
  * PURPOSE:         OMAP3 Board-Specific HAL Initialization
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/

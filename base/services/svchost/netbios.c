@@ -1,9 +1,9 @@
 /*
- * PROJECT:     ReactOS Service Host
+ * PROJECT:     ClawOS Service Host
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * FILE:        base/services/svchost/netbios.c
  * PURPOSE:     NetBIOS Service Support
- * PROGRAMMERS: ReactOS Portable Systems Group
+ * PROGRAMMERS: ClawOS Portable Systems Group
  */
 
 /* INCLUDES ******************************************************************/

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS certutil
+ * PROJECT:     ClawOS certutil
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     CertUtil commandline handling
  * COPYRIGHT:   Copyright 2020 Mark Jansen (mark.jansen@reactos.org)

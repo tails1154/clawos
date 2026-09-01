@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Kernel Streaming
+ * PROJECT:         ClawOS Kernel Streaming
  * FILE:            drivers/wdm/audio/backpln/portcls/port_topology.cpp
  * PURPOSE:         Topology Port driver
  * PROGRAMMER:      Johannes Anderwald

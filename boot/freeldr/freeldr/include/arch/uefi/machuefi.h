@@ -104,7 +104,7 @@ UefiHwDetect(
     _In_opt_ PCSTR Options);
 
 VOID
-UefiPrepareForReactOS(VOID);
+UefiPrepareForClawOS(VOID);
 
 VOID
 UefiHwIdle(VOID);

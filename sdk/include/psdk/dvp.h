@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:            This file is in the public domain.
- * PROJECT:              ReactOS kernel
+ * PROJECT:              ClawOS kernel
  * FILE:                 include/psdk/dvp.h
  * PURPOSE:              Directx headers
  * PROGRAMMER:           Magnus Olsen (greatlrd)

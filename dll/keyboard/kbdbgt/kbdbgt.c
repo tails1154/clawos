@@ -1,7 +1,7 @@
 /*
  * Tundzha - Bulgarian keyboard layout
  * Тунджа - Българска клавиатурна позвукова подредба 'явертъ' за РеактОС
- * Copyright (C) 2007 ReactOS
+ * Copyright (C) 2007 ClawOS
  * License: LGPL, see: LGPL.txt
  *
  * Thanks to: http://www.barcodeman.com/altek/mule/scandoc.php
@@ -369,10 +369,10 @@ ROSDATA VSC_LPWSTR extended_key_names[] = {
   { 0x51, L"Page Down" },
   { 0x52, L"Insert" },
   { 0x53, L"Delete" },
-  { 0x54, L"<ReactOS>" },
+  { 0x54, L"<ClawOS>" },
   { 0x56, L"Help" },
-  { 0x5b, L"Left <ReactOS>" },
-  { 0x5c, L"Right <ReactOS>" },
+  { 0x5b, L"Left <ClawOS>" },
+  { 0x5c, L"Right <ClawOS>" },
   { 0x5d, L"Application" },
   { 0, NULL }
 };

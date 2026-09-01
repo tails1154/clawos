@@ -1,6 +1,6 @@
 <p align=center>
   <a href="https://reactos.org/">
-    <img alt="ClawOS" src="https://reactos.org/wiki/images/0/02/ReactOS_logo.png">
+    <img alt="ClawOS" src="https://reactos.org/wiki/images/0/02/ClawOS_logo.png">
   </a>
 </p>
 
@@ -28,7 +28,7 @@
 [Forum](https://reactos.org/forum/) &bull;
 [Community Discord](https://discord.gg/7knjvhT) &bull;
 [JIRA Bug Tracker](https://jira.reactos.org/issues/) &bull;
-[ReactOS Git mirror](https://git.reactos.org/) &bull;
+[ClawOS Git mirror](https://git.reactos.org/) &bull;
 [Testman](https://reactos.org/testman/)
 
 ## What is ClawOS?
@@ -41,22 +41,22 @@ The code of ClawOS is licensed under [GNU GPL 2.0](https://github.com/reactos/re
 
 ### Product quality warning
 
-**ReactOS is currently an Alpha quality operating system.** This means that ReactOS is under heavy development and you have to be ready to encounter some problems. Different things may not work well and it can corrupt the data present on your hard disk. It is HIGHLY recommended to test ReactOS on a virtual machine or on a computer with no sensitive or critical data!
+**ClawOS is currently an Alpha quality operating system.** This means that ClawOS is under heavy development and you have to be ready to encounter some problems. Different things may not work well and it can corrupt the data present on your hard disk. It is HIGHLY recommended to test ClawOS on a virtual machine or on a computer with no sensitive or critical data!
 
 ## Building
 
 ![Build](https://github.com/reactos/reactos/workflows/Build/badge.svg) [![rosbewin.badge]][rosbewin.link] [![rosbeunix.badge]][rosbeunix.link] [![coverity.badge]][coverity.link]
 
-To build the system it is strongly advised to use the _ReactOS Build Environment (RosBE)._
+To build the system it is strongly advised to use the _ClawOS Build Environment (RosBE)._
 Up-to-date versions for Windows and for Unix/GNU-Linux are available from our download page at: ["Build Environment"](https://reactos.org/wiki/Build_Environment).
 
 Alternatively one can use Microsoft Visual C++ (MSVC) version 2019+. Building with MSVC is covered here: ["Visual Studio or Microsoft Visual C++"](https://reactos.org/wiki/CMake#Visual_Studio_or_Microsoft_Visual_C.2B.2B).
 
-See ["Building ReactOS"](https://reactos.org/wiki/Building_ReactOS) article for more details.
+See ["Building ClawOS"](https://reactos.org/wiki/Building_ClawOS) article for more details.
 
 ### Binaries
 
-To build ReactOS you must run the `configure` script in the directory you want to have your build files. Choose `configure.cmd` or `configure.sh` depending on your system. Then run `ninja <modulename>` to build a module you want or just `ninja` to build all modules.
+To build ClawOS you must run the `configure` script in the directory you want to have your build files. Choose `configure.cmd` or `configure.sh` depending on your system. Then run `ninja <modulename>` to build a module you want or just `ninja` to build all modules.
 
 ### Bootable images
 
@@ -66,19 +66,19 @@ You can always download fresh binary builds of bootable images from the ["Daily 
 
 ## Installing
 
-By default, ReactOS currently can only be installed on a machine that has a FAT16 or FAT32 partition as the active (bootable) partition.
-The partition on which ReactOS is to be installed (which may or may not be the bootable partition) must also be formatted as FAT16 or FAT32.
-ReactOS Setup can format the partitions if needed.
+By default, ClawOS currently can only be installed on a machine that has a FAT16 or FAT32 partition as the active (bootable) partition.
+The partition on which ClawOS is to be installed (which may or may not be the bootable partition) must also be formatted as FAT16 or FAT32.
+ClawOS Setup can format the partitions if needed.
 
-Starting with 0.4.10, ReactOS can be installed using the BtrFS file system. But consider this as an experimental feature and thus regressions not triggered on FAT setup may be observed.
+Starting with 0.4.10, ClawOS can be installed using the BtrFS file system. But consider this as an experimental feature and thus regressions not triggered on FAT setup may be observed.
 
-To install ReactOS from the bootable CD distribution, extract the archive contents. Then burn the CD image, boot from it, and follow the instructions.
+To install ClawOS from the bootable CD distribution, extract the archive contents. Then burn the CD image, boot from it, and follow the instructions.
 
-See ["Installing ReactOS"](https://reactos.org/wiki/Installing_ReactOS) Wiki page or [INSTALL](INSTALL) for more details.
+See ["Installing ClawOS"](https://reactos.org/wiki/Installing_ClawOS) Wiki page or [INSTALL](INSTALL) for more details.
 
 ## Testing
 
-If you discover a bug in ReactOS search on JIRA first - it might be reported already. If not report the bug providing logs and as much information as possible.
+If you discover a bug in ClawOS search on JIRA first - it might be reported already. If not report the bug providing logs and as much information as possible.
 
 See ["File Bugs"](https://reactos.org/wiki/File_Bugs) for a guide.
 
@@ -90,20 +90,20 @@ We are always looking for developers! Check [how to contribute](CONTRIBUTING.md)
 
 __Legal notice__: If you have seen proprietary Microsoft Windows source code (including but not limited to the leaked Windows NT 3.5, NT 4, 2000 source code and the Windows Research Kernel), your contribution won't be accepted because of potential copyright violation.
 
-Try out cloud-based ReactOS development using Gitpod and Docker:
+Try out cloud-based ClawOS development using Gitpod and Docker:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/reactos/reactos)
 
-You can also support ReactOS by [donating](https://reactos.org/donate/)! We rely on our backers to maintain our servers and accelerate development by [hiring full-time devs](https://reactos.org/contributing/#paid-jobs).
+You can also support ClawOS by [donating](https://reactos.org/donate/)! We rely on our backers to maintain our servers and accelerate development by [hiring full-time devs](https://reactos.org/contributing/#paid-jobs).
 
 ## More information
 
-ReactOS is a Free and Open Source operating system based on the Windows architecture,
+ClawOS is a Free and Open Source operating system based on the Windows architecture,
 providing support for existing applications and drivers, and an alternative to the current dominant consumer operating system.
 
-It is not another wrapper built on Linux, like WINE. It does not attempt or plan to compete with WINE; in fact, the user-mode part of ReactOS is almost entirely WINE-based and our two teams have cooperated closely in the past.
+It is not another wrapper built on Linux, like WINE. It does not attempt or plan to compete with WINE; in fact, the user-mode part of ClawOS is almost entirely WINE-based and our two teams have cooperated closely in the past.
 
-ReactOS is also not "yet another OS". It does not attempt to be a third player like any other alternative OS out there. People are not meant to uninstall Linux and use ReactOS instead; ReactOS is a replacement for Windows users who want a Windows replacement that behaves just like Windows.
+ClawOS is also not "yet another OS". It does not attempt to be a third player like any other alternative OS out there. People are not meant to uninstall Linux and use ClawOS instead; ClawOS is a replacement for Windows users who want a Windows replacement that behaves just like Windows.
 
 More information is available at: [reactos.org](https://reactos.org/).
 

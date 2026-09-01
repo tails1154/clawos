@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS system libraries
+ * PROJECT:     ClawOS system libraries
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        dll/win32/wlnotify/wlnotify.c
  * PURPOSE:     Winlogon notifications

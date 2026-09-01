@@ -3,7 +3,7 @@
  *
  * Windows NT Filesystem Driver Developer Kit
  *
- * This file is part of the ReactOS DDK package.
+ * This file is part of the ClawOS DDK package.
  *
  * Contributors:
  *   Amine Khaldi

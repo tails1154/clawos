@@ -1,5 +1,5 @@
 /*
- *  ReactOS test program -
+ *  ClawOS test program -
  *
  *  wfileio.c
  *

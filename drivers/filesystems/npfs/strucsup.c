@@ -1,9 +1,9 @@
 /*
- * PROJECT:     ReactOS Named Pipe FileSystem
+ * PROJECT:     ClawOS Named Pipe FileSystem
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * FILE:        drivers/filesystems/npfs/strucsup.c
  * PURPOSE:
- * PROGRAMMERS: ReactOS Portable Systems Group
+ * PROGRAMMERS: ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/

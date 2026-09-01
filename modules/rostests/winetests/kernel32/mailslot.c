@@ -402,7 +402,7 @@ static int mailslot_test(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: This often bugchecks on ReactOS. This does not bugcheck on checked Windows builds.\n");
+        ok(FALSE, "FIXME: This often bugchecks on ClawOS. This does not bugcheck on checked Windows builds.\n");
     } else {
 #endif
     io.Status = 0xdeadbeef;

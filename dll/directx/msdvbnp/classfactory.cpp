@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS BDA Proxy
+ * PROJECT:         ClawOS BDA Proxy
  * FILE:            dll/directx/msdvbnp/classfactory.cpp
  * PURPOSE:         IClassFactory interface
  *

@@ -333,7 +333,7 @@ static void test_FiberLocalStorage(void)
         ok(count && (count <= 127 || (count > 4000 && count < 4096)), "Got unexpected count %u.\n", count);
 
 #if defined(__REACTOS__) && defined(_WIN64)
-        /* peb layout is different on ReactOS x64 */
+        /* peb layout is different on ClawOS x64 */
         if (!is_reactos() && !peb->FlsCallback)
 #else
         if (!peb->FlsCallback)
@@ -541,7 +541,7 @@ static void test_FiberLocalStorage(void)
         }
 
 #if defined(__REACTOS__) && defined(_WIN64)
-        /* peb layout is different on ReactOS x64 */
+        /* peb layout is different on ClawOS x64 */
         if (!is_reactos() && !peb->FlsCallback)
 #else
         if (!peb->FlsCallback)
@@ -953,7 +953,7 @@ static void subtest_fiber_actctx_preservation(HANDLE current_actctx, HANDLE chil
 
     /* The exited thread has been converted to a fiber */
 #if defined(__REACTOS__) && defined(_M_AMD64)
-    skip("FIXME: SwitchToFiber() is unimplemented on AMD64 ReactOS\n");
+    skip("FIXME: SwitchToFiber() is unimplemented on AMD64 ClawOS\n");
 #else
     SwitchToFiber(fibers[1]);
     check_current_actctx_is(current_actctx, FALSE);

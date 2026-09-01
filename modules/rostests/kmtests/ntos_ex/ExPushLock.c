@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS kernel tests
+ * PROJECT:     ClawOS kernel tests
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Push lock tests
  * COPYRIGHT:   Copyright 2026 Gleb Surikov <glebs.surikovs@gmail.com>

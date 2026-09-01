@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 /*
- * PROJECT:     ReactOS Ping Command
+ * PROJECT:     ClawOS Ping Command
  * LICENSE:     MIT
  * FILE:        base/applications/network/ping/ping.c
  * PURPOSE:     Network test utility

@@ -1,9 +1,9 @@
 /*
  * COPYRIGHT:         See COPYING in the top level directory
- * PROJECT:          ReactOS win32 subsystem
+ * PROJECT:          ClawOS win32 subsystem
  * PURPOSE:
  * FILE:             win32ss/gdi/eng/sort.c
- * PROGRAMER:        ReactOS Team
+ * PROGRAMER:        ClawOS Team
  */
 
 #include <win32k.h>

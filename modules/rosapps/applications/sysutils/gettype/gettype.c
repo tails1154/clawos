@@ -1,9 +1,9 @@
 /*
- * ReactOS Win32 Applications
- * Copyright (C) 2005 ReactOS Team
+ * ClawOS Win32 Applications
+ * Copyright (C) 2005 ClawOS Team
  *
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS arp utility
+ * PROJECT:     ClawOS arp utility
  * FILE:        apps/utils/gettype/gettype.c
  * PURPOSE:
  * PROGRAMMERS: Brandon Turner (turnerb7@msu.edu)

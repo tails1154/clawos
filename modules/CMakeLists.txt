@@ -1,6 +1,6 @@
 
-option(ENABLE_ROSAPPS "Enable building the ReactOS extra applications" OFF)
-option(ENABLE_ROSTESTS "Enable building the ReactOS test suite" OFF)
+option(ENABLE_ROSAPPS "Enable building the ClawOS extra applications" OFF)
+option(ENABLE_ROSTESTS "Enable building the ClawOS test suite" OFF)
 option(ENABLE_WALLPAPERS "Integrate wallpapers into the built ISOs" OFF)
 
 if(ENABLE_ROSAPPS)

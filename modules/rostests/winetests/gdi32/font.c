@@ -7872,7 +7872,7 @@ START_TEST(font)
     test_outline_font();
 #ifdef __REACTOS__
     if (is_reactos())
-        skip("FIXME: ReactOS does not support bitmap (raster) fonts at this time\n");
+        skip("FIXME: ClawOS does not support bitmap (raster) fonts at this time\n");
     else
         test_bitmap_font_metrics();
 #else

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS API Tests
+ * PROJECT:     ClawOS API Tests
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Small library with probing utilities for thread/process classes information
  * COPYRIGHT:   Copyright 2020 George Bișoc <george.bisoc@reactos.org>
@@ -296,7 +296,7 @@ QuerySetThreadValidator(
                 }
 
                 /* ThreadNameInformation is Windows 10+, but
-                 * ReactOS supports this class, so don't exclude it */
+                 * ClawOS supports this class, so don't exclude it */
                 case ThreadNameInformation:
                 {
 #ifndef __REACTOS__
@@ -397,7 +397,7 @@ QuerySetThreadValidator(
                 }
 
                 /* ThreadNameInformation is Windows 10+, but
-                 * ReactOS supports this class, so don't exclude it */
+                 * ClawOS supports this class, so don't exclude it */
                 case ThreadNameInformation:
                 {
 #ifndef __REACTOS__

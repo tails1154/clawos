@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS api tests
+ * PROJECT:         ClawOS api tests
  * LICENSE:         GPL - See COPYING in the top level directory
  * PURPOSE:         Test for WSARecv
  * PROGRAMMERS:     Peter Hater
@@ -83,10 +83,10 @@ void Test_WSARecv()
     ok(!memcmp(szBuf, szDummyBytes, RECV_BUF), "not equal\n");
 
     /* Connect to "www.reactos.org" */
-    if (!ConnectToReactOSWebsite(sck))
+    if (!ConnectToClawOSWebsite(sck))
     {
         WSACleanup();
-        skip("ConnectToReactOSWebsite failed. Aborting test.\n");
+        skip("ConnectToClawOSWebsite failed. Aborting test.\n");
         return;
     }
 

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Kernel
+ * PROJECT:     ClawOS Kernel
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     PnP manager Root DMA Arbiter
  * COPYRIGHT:   Copyright 2025-2026 Justin Miller <justin.miller@reactos.org>

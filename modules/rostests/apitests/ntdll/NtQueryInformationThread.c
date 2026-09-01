@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS API tests
+ * PROJECT:     ClawOS API tests
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Tests for the NtQueryInformationThread API
  * COPYRIGHT:   Copyright 2020 George Bișoc <george.bisoc@reactos.org>
@@ -437,7 +437,7 @@ DoThreadNameTest(
     ok_long((ULONG)pNameInfo->ThreadName.MaximumLength, (ULONG)pNameInfo->ThreadName.Length);
     if (bEmptyName)
     {
-        ok(pNameInfo->ThreadName.Buffer == NULL || /* ReactOS will set the Buffer to NULL */
+        ok(pNameInfo->ThreadName.Buffer == NULL || /* ClawOS will set the Buffer to NULL */
            /* All Win10+ versions erroneously point the Buffer past the end of the data */
            broken(pNameInfo->ThreadName.Buffer == (PVOID)(&pNameInfo->ThreadName + 1)),
            "Expected NULL pointer, got 0x%p\n", pNameInfo->ThreadName.Buffer);
@@ -472,7 +472,7 @@ DoThreadNameTest(
     ok_long((ULONG)pNameInfo->ThreadName.MaximumLength, (ULONG)pNameInfo->ThreadName.Length);
     if (bEmptyName)
     {
-        ok(pNameInfo->ThreadName.Buffer == NULL || /* ReactOS will set the Buffer to NULL */
+        ok(pNameInfo->ThreadName.Buffer == NULL || /* ClawOS will set the Buffer to NULL */
            /* All Win10+ versions erroneously point the Buffer past the end of the data */
            broken(pNameInfo->ThreadName.Buffer == (PVOID)(&pNameInfo->ThreadName + 1)),
            "Expected NULL pointer, got 0x%p\n", pNameInfo->ThreadName.Buffer);
@@ -504,7 +504,7 @@ DoThreadNameTest(
         ok_long((ULONG)pNameInfo->ThreadName.MaximumLength, (ULONG)pNameInfo->ThreadName.Length);
         if (bEmptyName)
         {
-            ok(pNameInfo->ThreadName.Buffer == NULL || /* ReactOS will set the Buffer to NULL */
+            ok(pNameInfo->ThreadName.Buffer == NULL || /* ClawOS will set the Buffer to NULL */
                /* All Win10+ versions erroneously point the Buffer past the end of the data */
                broken(pNameInfo->ThreadName.Buffer == (PVOID)(&pNameInfo->ThreadName + 1)),
                "Expected NULL pointer, got 0x%p\n", pNameInfo->ThreadName.Buffer);

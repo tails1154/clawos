@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS System Setup
+ * PROJECT:     ClawOS System Setup
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  *              or GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Addon installation management

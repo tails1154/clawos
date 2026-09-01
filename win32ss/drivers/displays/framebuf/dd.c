@@ -1,5 +1,5 @@
 /*
- * ReactOS Generic Framebuffer display driver directdraw interface
+ * ClawOS Generic Framebuffer display driver directdraw interface
  *
  * Copyright (C) 2006 Magnus Olsen
  *

@@ -133,9 +133,9 @@ WinLdrInitializePhase1(
      * Examples of correct options and paths:
      * CHAR BootOptions[] = "DEBUGPORT=COM1 BAUDRATE=115200";
      * CHAR SystemPartition[] = "multi(0)disk(0)rdisk(0)partition(1)";
-     * CHAR BootPath[] = "multi(0)disk(0)rdisk(0)partition(2)\\ReactOS\\";
+     * CHAR BootPath[] = "multi(0)disk(0)rdisk(0)partition(2)\\ClawOS\\";
      * --> ArcBootDevice = "multi(0)disk(0)rdisk(0)partition(2)"
-     *     SystemRoot = "\\ReactOS\\"
+     *     SystemRoot = "\\ClawOS\\"
      */
     CHAR  HalPath[] = "\\";
     CHAR  FilePath[MAX_PATH+1];
@@ -143,8 +143,8 @@ WinLdrInitializePhase1(
     PLOADER_PARAMETER_EXTENSION Extension;
 
     /* Convert BootPath to SystemRoot. Attempt to handle paths like:
-     * "multi(0)disk(0)rdisk(0)partition(2)ReactOS\\weird)name"
-     * where SystemRoot would be: "ReactOS\\weird)name" */
+     * "multi(0)disk(0)rdisk(0)partition(2)ClawOS\\weird)name"
+     * where SystemRoot would be: "ClawOS\\weird)name" */
     PCSTR SystemRoot = BootPath + strcspn(BootPath, "\\");
     PCSTR LastParen;
 
@@ -1448,7 +1448,7 @@ LoadAndBootWindowsCommon(
     LoaderBlockVA = PaToVa(LoaderBlock);
 
     /* "Stop all motors", change videomode */
-    MachPrepareForReactOS();
+    MachPrepareForClawOS();
 
     /* Show the "debug mode" notice if needed */
     /* Match KdInitSystem() conditions */

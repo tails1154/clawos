@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            ntoskrnl/mm/ARM3/virtual.c
  * PURPOSE:         ARM Memory Manager Virtual Memory Management
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/
@@ -4997,7 +4997,7 @@ NtAllocateVirtualMemory(IN HANDLE ProcessHandle,
     }
 
     //
-    // This is a specific ReactOS check because we only use normal VADs
+    // This is a specific ClawOS check because we only use normal VADs
     //
     ASSERT(FoundVad->u.VadFlags.VadType == VadNone);
 
@@ -5539,7 +5539,7 @@ NtFreeVirtualMemory(IN HANDLE ProcessHandle,
                     //
                     // Now the addresses for both VADs are consistent,
                     // so insert the new one.
-                    // ReactOS: This will take care of creating a second MEMORY_AREA.
+                    // ClawOS: This will take care of creating a second MEMORY_AREA.
                     //
                     MiInsertVad(NewVad, &Process->VadRoot);
 

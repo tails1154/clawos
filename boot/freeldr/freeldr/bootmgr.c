@@ -35,17 +35,17 @@ typedef VOID
     _Inout_ OperatingSystemItem* OperatingSystem);
 
 static VOID
-EditCustomBootReactOSSetup(
+EditCustomBootClawOSSetup(
     _Inout_ OperatingSystemItem* OperatingSystem)
 {
-    EditCustomBootReactOS(OperatingSystem, TRUE);
+    EditCustomBootClawOS(OperatingSystem, TRUE);
 }
 
 static VOID
 EditCustomBootNTOS(
     _Inout_ OperatingSystemItem* OperatingSystem)
 {
-    EditCustomBootReactOS(OperatingSystem, FALSE);
+    EditCustomBootClawOS(OperatingSystem, FALSE);
 }
 
 typedef struct _OS_LOADING_METHOD
@@ -71,7 +71,7 @@ OSLoadingMethods[] =
     {"Windows"     , EditCustomBootNTOS, MenuNTOptions, LoadAndBootWindows},
     {"Windows2003" , EditCustomBootNTOS, MenuNTOptions, LoadAndBootWindows},
     {"WindowsVista", EditCustomBootNTOS, MenuNTOptions, LoadAndBootWindows},
-    {"ReactOSSetup", EditCustomBootReactOSSetup, MenuNTOptions, LoadReactOSSetup},
+    {"ClawOSSetup", EditCustomBootClawOSSetup, MenuNTOptions, LoadClawOSSetup},
 };
 
 /* FUNCTIONS ******************************************************************/
@@ -102,8 +102,8 @@ WarnDeprecated(
         "\n"
         "%s\n"
         "\n"
-        "Should you need assistance, please contact ReactOS developers\n"
-        "on the official ReactOS Mattermost server <chat.reactos.org>.",
+        "Should you need assistance, please contact ClawOS developers\n"
+        "on the official ClawOS Mattermost server <chat.reactos.org>.",
         msgString);
 }
 #endif // HAS_DEPRECATED_OPTIONS

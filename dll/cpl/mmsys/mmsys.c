@@ -1,8 +1,8 @@
 /*
  *
- * PROJECT:         ReactOS Multimedia Control Panel
+ * PROJECT:         ClawOS Multimedia Control Panel
  * FILE:            dll/cpl/mmsys/mmsys.c
- * PURPOSE:         ReactOS Multimedia Control Panel
+ * PURPOSE:         ClawOS Multimedia Control Panel
  * PROGRAMMER:      Thomas Weidenmueller <w3seek@reactos.com>
  *                  Dmitry Chapyshev <dmitry@reactos.org>
  * UPDATE HISTORY:
@@ -46,15 +46,15 @@ static EVENT_LABEL_ITEM EventLabels[] =
 {
     {
         L"WindowsLogon",
-        L"ReactOS Logon",
+        L"ClawOS Logon",
         IDS_REACTOS_LOGON,
-        L"ReactOS_Logon.wav"
+        L"ClawOS_Logon.wav"
     },
     {
         L"WindowsLogoff",
-        L"ReactOS Logoff",
+        L"ClawOS Logoff",
         IDS_REACTOS_LOGOFF,
-        L"ReactOS_Logoff.wav"
+        L"ClawOS_Logoff.wav"
     },
     {
         NULL,
@@ -68,7 +68,7 @@ static SYSTEM_SCHEME_ITEM SystemSchemes[] =
 {
     {
         L".Default",
-        L"ReactOS Standard",
+        L"ClawOS Standard",
         IDS_REACTOS_DEFAULT_SCHEME
     },
     {

@@ -1,6 +1,6 @@
 /*
- * ReactOS New devices installation
- * Copyright (C) 2005, 2008 ReactOS Team
+ * ClawOS New devices installation
+ * Copyright (C) 2005, 2008 ClawOS Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,9 +17,9 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 /*
- * PROJECT:         ReactOS Add hardware control panel
+ * PROJECT:         ClawOS Add hardware control panel
  * FILE:            dll/cpl/hdwwiz/hdwwiz.c
- * PURPOSE:         ReactOS Add hardware control panel
+ * PURPOSE:         ClawOS Add hardware control panel
  * PROGRAMMER:      Hervé Poussineau (hpoussin@reactos.org)
  *                  Dmitry Chapyshev (dmitry@reactos.org)
  */

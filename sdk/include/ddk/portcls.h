@@ -1,5 +1,5 @@
 /*
-    ReactOS Kernel Streaming
+    ClawOS Kernel Streaming
     Port Class
 
     This file is in the public domain.

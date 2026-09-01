@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * FILE:            ntoskrnl/ex/time.c
  * PURPOSE:         Time and Timezone Management
  * PROGRAMMERS:     Eric Kohl

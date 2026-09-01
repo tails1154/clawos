@@ -176,7 +176,7 @@ SetupLdrScanBootDrivers(
             InfGetDataField(&InfContext, 0, &DriverName) &&
             InfGetDataField(&InfContext, 13, &dirIndex))
         {
-            if ((strcmp(Media, "x") == 0) && // HACK: ReactOS-specific
+            if ((strcmp(Media, "x") == 0) && // HACK: ClawOS-specific
                 InfFindFirstLine(InfHandle, "Directories", dirIndex, &dirContext) &&
                 InfGetDataField(&dirContext, 1, &ImagePath))
             {
@@ -378,7 +378,7 @@ NtLdrGetHigherPriorityOptions(
 
 
 ARC_STATUS
-LoadReactOSSetup(
+LoadClawOSSetup(
     IN ULONG Argc,
     IN PCHAR Argv[],
     IN PCHAR Envp[])
@@ -427,7 +427,7 @@ LoadReactOSSetup(
         ERR("No 'BootType' value, aborting!\n");
         return EINVAL;
     }
-    if (_stricmp(ArgValue, "ReactOSSetup") != 0)
+    if (_stricmp(ArgValue, "ClawOSSetup") != 0)
     {
         ERR("Unknown 'BootType' value '%s', aborting!\n", ArgValue);
         return EINVAL;

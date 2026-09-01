@@ -35,7 +35,7 @@
 
 /* helpers.c */
 int CreateSocket(SOCKET* sck);
-int ConnectToReactOSWebsite(SOCKET sck);
+int ConnectToClawOSWebsite(SOCKET sck);
 int GetRequestAndWait(SOCKET sck);
 
 /* ws2_32.c */

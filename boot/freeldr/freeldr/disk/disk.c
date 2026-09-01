@@ -164,7 +164,7 @@ DiskInitialize(
     }
 
     /* Fill out the ARC disk block */
-    AddReactOSArcDiskInfo(DeviceName, GptDiskGuid, Signature,
+    AddClawOSArcDiskInfo(DeviceName, GptDiskGuid, Signature,
                           Checksum, ValidPartitionTable);
 
     if (pChecksum)

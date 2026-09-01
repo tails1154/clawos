@@ -1,22 +1,22 @@
-##   List of maintainers for the ReactOS project
+##   List of maintainers for the ClawOS project
 
 ## This file purpose is to give newcomers to the project the responsible
 ## developers when submitting a pull request on GitHub, or opening a bug
 ## report on Jira.
 
 ## This file will notably establish who is responsible for a specific
-## area of ReactOS. Being a maintainer means the following:
+## area of ClawOS. Being a maintainer means the following:
 ##  - that person has good knownledge in the area
 ##  - that person is able to enforce consistency in the area
 ##  - that person may be available for giving help in the area
 ##  - that person has push access on the repository
 ## Being a maintainer does not mean the following:
 ##  - that person is dedicated to the area
-##  - that person is working full-time on the area/on ReactOS
+##  - that person is working full-time on the area/on ClawOS
 ##  - that person is paid
 ##  - that person is always available
 
-## We have no supported (paid) areas in ReactOS.
+## We have no supported (paid) areas in ClawOS.
 
 ## When submitting a pull request on GitHub and looking for reviewers,
 ## look at that file and ask for a review from some of the people (M, R
@@ -312,19 +312,19 @@
 #   S: Maintained
 /base/shell/progman/    @HBelusca
 
-# ReactOS API Tests
+# ClawOS API Tests
 #   M:
 #   R: learn-more, learn_more, Mark Jansen
 #   R: ThFabba, Thomas Faber
 #   S: Maintained
 /modules/rostests/apitests/
 
-# ReactOS Kernel-Mode Tests
+# ClawOS Kernel-Mode Tests
 #   M: ThFabba, Thomas Faber
 #   S: Maintained
 /modules/rostests/kmtests/  @ThFabba
 
-# ReactOS Setup
+# ClawOS Setup
 #   M: HBelusca, Hermès Bélusca-Maïto
 #   R: EricKohl, ekohl, Eric Kohl
 #   S: Maintained
@@ -335,14 +335,14 @@
 /drivers/setup/                     @HBelusca
 /sdk/include/reactos/libs/syssetup/ @EricKohl
 
-# ReactOS miscellaneous tools
+# ClawOS miscellaneous tools
 #   M:
 #   R: HBelusca, Hermès Bélusca-Maïto
 #   S: Maintained
 /modules/rosapps/applications/cmdutils/cat/             @HBelusca
 /modules/rosapps/applications/sysutils/utils/partinfo/  @HBelusca
 
-# ReactOS internals tools
+# ClawOS internals tools
 #   M: HeisSpiter, Heis Spiter, Pierre Schweitzer
 #   S: Maintained
 /modules/rosapps/applications/rosinternals/ @HeisSpiter
@@ -489,7 +489,7 @@ amd64/                                      @tkreuzer
 /dll/directx/wine/  @DarkFire01
 
 # Translations
-# This is the list of translation teams in ReactOS GitHub organization.
+# This is the list of translation teams in ClawOS GitHub organization.
 # If you want to be part of one - hit us at https://chat.reactos.org/
 de-DE.*    @reactos/lang-german
 es-ES.*    @reactos/lang-spanish

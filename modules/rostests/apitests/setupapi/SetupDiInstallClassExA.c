@@ -145,7 +145,7 @@ static void test_SetupDiInstallClassExA(void)
     }
 
     /* [Version]Signature+Class+ClassGUID;[ClassInstall32.NT]AddReg; [SampleClassAddReg]HKR;*/
-    strcat(inf, "HKR,,,,\"ReactOS Test SetupDiInstallClassExA\"\n");
+    strcat(inf, "HKR,,,,\"ClawOS Test SetupDiInstallClassExA\"\n");
     create_inf_file(inffile, inf);
     StringCbPrintfA(path, sizeof(path), "%s\\%s", CURR_DIR, inffile);
 

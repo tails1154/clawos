@@ -1,6 +1,6 @@
 /*
- *  ReactOS kill
- *  Copyright (C) 2003 ReactOS Team
+ *  ClawOS kill
+ *  Copyright (C) 2003 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS kill.exe
+ * PROJECT:         ClawOS kill.exe
  * FILE:            apps/utils/kill/kill.c
  * PURPOSE:         Kill a running Process
  * PROGRAMMER:      Steven Edwards (Steven_Ed4153@yahoo.com)

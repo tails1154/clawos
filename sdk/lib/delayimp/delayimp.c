@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS delayimport Library
+ * PROJECT:     ClawOS delayimport Library
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Implementation of delayimport library
  * COPYRIGHT:   Copyright 2009 Timo Kreuzer <timo.kreuzer@reactos.org>

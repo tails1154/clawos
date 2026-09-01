@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       GPL - See COPYING in the top level directory
- * PROJECT:         ReactOS Virtual DOS Machine
+ * PROJECT:         ClawOS Virtual DOS Machine
  * FILE:            subsystems/mvdm/ntvdm/utils.h
  * PURPOSE:         Utility Functions
  * PROGRAMMERS:     Hermes Belusca-Maito (hermes.belusca@sfr.fr)

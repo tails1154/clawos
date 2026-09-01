@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Boot Video Driver
+ * PROJECT:     ClawOS Boot Video Driver
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Boot-time (POST) display discovery helper functions.
  * COPYRIGHT:   Copyright 2023-2026 Hermès Bélusca-Maïto <hermes.belusca-maito@reactos.org>

@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS On-Screen Keyboard
+ * PROJECT:         ClawOS On-Screen Keyboard
  * LICENSE:         GPL - See COPYING in the top level directory
  * PURPOSE:         On-screen keyboard.
  * COPYRIGHT:       Denis ROBERT

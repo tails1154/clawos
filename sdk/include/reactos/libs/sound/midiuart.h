@@ -1,5 +1,5 @@
 /*
-    ReactOS Sound System
+    ClawOS Sound System
     MIDI UART support
 
     Author:

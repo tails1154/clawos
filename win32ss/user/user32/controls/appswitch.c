@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS user32.dll
+ * PROJECT:     ClawOS user32.dll
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     App switching functionality
  * COPYRIGHT:   Copyright Johannes Anderwald (johannes.anderwald@reactos.org)

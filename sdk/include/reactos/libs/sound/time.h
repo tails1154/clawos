@@ -1,5 +1,5 @@
 /*
-    ReactOS Sound System
+    ClawOS Sound System
     Timing helper
 
     Author:

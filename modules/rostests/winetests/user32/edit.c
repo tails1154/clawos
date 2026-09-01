@@ -1835,7 +1835,7 @@ static void test_initialization(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: ReactOS crashes on this test!\n");
+        ok(FALSE, "FIXME: ClawOS crashes on this test!\n");
         return;
     }
 #endif

@@ -398,7 +398,7 @@ AckPageDlgProc(HWND hwndDlg,
 }
 
 static const WCHAR s_szProductOptions[] = L"SYSTEM\\CurrentControlSet\\Control\\ProductOptions";
-static const WCHAR s_szRosVersion[] = L"SYSTEM\\CurrentControlSet\\Control\\ReactOS\\Settings\\Version";
+static const WCHAR s_szRosVersion[] = L"SYSTEM\\CurrentControlSet\\Control\\ClawOS\\Settings\\Version";
 static const WCHAR s_szControlWindows[] = L"SYSTEM\\CurrentControlSet\\Control\\Windows";
 static const WCHAR s_szWinlogon[] = L"SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon";
 static const WCHAR s_szDefaultSoundEvents[] = L"AppEvents\\Schemes\\Apps\\.Default";
@@ -432,38 +432,38 @@ static const WCHAR* InstallationTypes[INSTALLATION_TYPE_MAX] =
 
 static const WCHAR* s_DefaultSoundEvents[][2] =
 {
-    { L".Default", L"%SystemRoot%\\Media\\ReactOS_Default.wav" },
+    { L".Default", L"%SystemRoot%\\Media\\ClawOS_Default.wav" },
     { L"AppGPFault", L"" },
     { L"Close", L"" },
-    { L"CriticalBatteryAlarm", L"%SystemRoot%\\Media\\ReactOS_Battery_Critical.wav" },
-    { L"DeviceConnect",  L"%SystemRoot%\\Media\\ReactOS_Hardware_Insert.wav" },
-    { L"DeviceDisconnect", L"%SystemRoot%\\Media\\ReactOS_Hardware_Remove.wav" },
-    { L"DeviceFail", L"%SystemRoot%\\Media\\ReactOS_Hardware_Fail.wav" },
-    { L"LowBatteryAlarm", L"%SystemRoot%\\Media\\ReactOS_Battery_Low.wav" },
-    { L"MailBeep", L"%SystemRoot%\\Media\\ReactOS_Notify.wav" },
-    { L"Maximize", L"%SystemRoot%\\Media\\ReactOS_Restore.wav" },
-    { L"MenuCommand", L"%SystemRoot%\\Media\\ReactOS_Menu_Command.wav" },
+    { L"CriticalBatteryAlarm", L"%SystemRoot%\\Media\\ClawOS_Battery_Critical.wav" },
+    { L"DeviceConnect",  L"%SystemRoot%\\Media\\ClawOS_Hardware_Insert.wav" },
+    { L"DeviceDisconnect", L"%SystemRoot%\\Media\\ClawOS_Hardware_Remove.wav" },
+    { L"DeviceFail", L"%SystemRoot%\\Media\\ClawOS_Hardware_Fail.wav" },
+    { L"LowBatteryAlarm", L"%SystemRoot%\\Media\\ClawOS_Battery_Low.wav" },
+    { L"MailBeep", L"%SystemRoot%\\Media\\ClawOS_Notify.wav" },
+    { L"Maximize", L"%SystemRoot%\\Media\\ClawOS_Restore.wav" },
+    { L"MenuCommand", L"%SystemRoot%\\Media\\ClawOS_Menu_Command.wav" },
     { L"MenuPopup", L"" },
-    { L"Minimize", L"%SystemRoot%\\Media\\ReactOS_Minimize.wav" },
+    { L"Minimize", L"%SystemRoot%\\Media\\ClawOS_Minimize.wav" },
     { L"Open", L"" },
-    { L"PrintComplete", L"%SystemRoot%\\Media\\ReactOS_Print_Complete.wav" },
+    { L"PrintComplete", L"%SystemRoot%\\Media\\ClawOS_Print_Complete.wav" },
     { L"RestoreDown", L"" },
     { L"RestoreUp", L"" },
-    { L"SystemAsterisk", L"%SystemRoot%\\Media\\ReactOS_Ding.wav" },
-    { L"SystemExclamation", L"%SystemRoot%\\Media\\ReactOS_Exclamation.wav" },
-    { L"SystemExit", L"%SystemRoot%\\Media\\ReactOS_Shutdown.wav" },
-    { L"SystemHand", L"%SystemRoot%\\Media\\ReactOS_Critical_Stop.wav" },
-    { L"SystemNotification", L"%SystemRoot%\\Media\\ReactOS_Balloon.wav" },
-    { L"SystemQuestion", L"%SystemRoot%\\Media\\ReactOS_Ding.wav" },
-    { L"SystemStart", L"%SystemRoot%\\Media\\ReactOS_Startup.wav" },
-    { L"WindowsLogoff", L"%SystemRoot%\\Media\\ReactOS_LogOff.wav" }
+    { L"SystemAsterisk", L"%SystemRoot%\\Media\\ClawOS_Ding.wav" },
+    { L"SystemExclamation", L"%SystemRoot%\\Media\\ClawOS_Exclamation.wav" },
+    { L"SystemExit", L"%SystemRoot%\\Media\\ClawOS_Shutdown.wav" },
+    { L"SystemHand", L"%SystemRoot%\\Media\\ClawOS_Critical_Stop.wav" },
+    { L"SystemNotification", L"%SystemRoot%\\Media\\ClawOS_Balloon.wav" },
+    { L"SystemQuestion", L"%SystemRoot%\\Media\\ClawOS_Ding.wav" },
+    { L"SystemStart", L"%SystemRoot%\\Media\\ClawOS_Startup.wav" },
+    { L"WindowsLogoff", L"%SystemRoot%\\Media\\ClawOS_LogOff.wav" }
 /* Logon sound is already set by default for both Server and Workstation */
 };
 
 static const WCHAR* s_ExplorerSoundEvents[][2] =
 {
-    { L"EmptyRecycleBin", L"%SystemRoot%\\Media\\ReactOS_Recycle.wav" },
-    { L"Navigating", L"%SystemRoot%\\Media\\ReactOS_Start.wav" }
+    { L"EmptyRecycleBin", L"%SystemRoot%\\Media\\ClawOS_Recycle.wav" },
+    { L"Navigating", L"%SystemRoot%\\Media\\ClawOS_Start.wav" }
 };
 
 static BOOL
@@ -589,7 +589,7 @@ DoWriteInstallationType(INSTALLATION_TYPE nOption)
 
     RegCloseKey(hKey);
 
-    /* open ReactOS version key */
+    /* open ClawOS version key */
     error = RegOpenKeyExW(HKEY_LOCAL_MACHINE, s_szRosVersion, 0, KEY_WRITE, &hKey);
     if (error)
     {
@@ -942,7 +942,7 @@ OwnerPageDlgProc(HWND hwndDlg,
                     {
                         if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP, Title, ARRAYSIZE(Title)))
                         {
-                            wcscpy(Title, L"ReactOS Setup");
+                            wcscpy(Title, L"ClawOS Setup");
                         }
                         if (0 == LoadStringW(hDllInstance, IDS_WZD_NAME, ErrorName, ARRAYSIZE(ErrorName)))
                         {
@@ -998,7 +998,7 @@ WriteComputerSettings(WCHAR * ComputerName, HWND hwndDlg)
         {
             if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP, Title, ARRAYSIZE(Title)))
             {
-                wcscpy(Title, L"ReactOS Setup");
+                wcscpy(Title, L"ClawOS Setup");
             }
             if (0 == LoadStringW(hDllInstance, IDS_WZD_SETCOMPUTERNAME, ErrorComputerName,
                                  ARRAYSIZE(ErrorComputerName)))
@@ -1144,7 +1144,7 @@ ComputerPageDlgProc(HWND hwndDlg,
 
     if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP, Title, ARRAYSIZE(Title)))
     {
-        wcscpy(Title, L"ReactOS Setup");
+        wcscpy(Title, L"ClawOS Setup");
     }
 
     switch (uMsg)
@@ -1327,7 +1327,7 @@ SetKeyboardLayoutName(HWND hwnd)
     /*
      * Determine the keyboard layout name currently used on the system.
      *
-     * On Windows/ReactOS, there doesn't exist any straightforward way to
+     * On Windows/ClawOS, there doesn't exist any straightforward way to
      * retrieve the currently-used keyboard layout ID (KLID), from which
      * its name can be obtained.
      *
@@ -1513,7 +1513,7 @@ EnableVisualTheme(
 // https://pinvoke.net/default.aspx/uxtheme.SetSystemVisualStyle
 // or ApplyTheme(NULL, 0, NULL) for restoring the classic theme.
 //
-// NOTE: The '/Action:ActivateMSTheme' is ReactOS-specific.
+// NOTE: The '/Action:ActivateMSTheme' is ClawOS-specific.
 //
 
     if (ThemeFile && (fType == THEME_FILE))
@@ -1975,7 +1975,7 @@ WriteDateTimeSettings(HWND hwndDlg, PSETUPDATA SetupData)
     {
         if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP, Title, ARRAYSIZE(Title)))
         {
-            wcscpy(Title, L"ReactOS Setup");
+            wcscpy(Title, L"ClawOS Setup");
         }
         if (0 == LoadStringW(hDllInstance, IDS_WZD_LOCALTIME, ErrorLocalTime,
                              ARRAYSIZE(ErrorLocalTime)))
@@ -2588,7 +2588,7 @@ ShowItemError(
         if (LoadStringW(hDllInstance, IDS_REACTOS_SETUP,
                         Title, ARRAYSIZE(Title)) == 0)
         {
-            wcscpy(Title, L"ReactOS Setup");
+            wcscpy(Title, L"ClawOS Setup");
         }
 
         MessageBoxW(hwndDlg, ErrorMessage, Title, MB_ICONERROR | MB_OK);
@@ -2632,7 +2632,7 @@ ShowStepError(
         if (LoadStringW(hDllInstance, IDS_REACTOS_SETUP,
                         Title, ARRAYSIZE(Title)) == 0)
         {
-            wcscpy(Title, L"ReactOS Setup");
+            wcscpy(Title, L"ClawOS Setup");
         }
 
         MessageBoxW(hwndDlg, ErrorMessage,
@@ -2897,7 +2897,7 @@ FinishDlgProc(HWND hwndDlg,
 
 
 /*
- * GetInstallSourceWin32 retrieves the path to the ReactOS installation medium
+ * GetInstallSourceWin32 retrieves the path to the ClawOS installation medium
  * in Win32 format, for later use by syssetup and storage in the registry.
  */
 static BOOL
@@ -3508,7 +3508,7 @@ InstallWizard(VOID)
         LogItem(NULL, L"SetupData allocation failed!");
         MessageBoxW(NULL,
                     L"Setup failed to allocate global data!",
-                    L"ReactOS Setup",
+                    L"ClawOS Setup",
                     MB_ICONERROR | MB_OK);
         goto done;
     }
@@ -3538,7 +3538,7 @@ InstallWizard(VOID)
         LogItem(NULL, L"Page array allocation failed!");
         MessageBoxW(NULL,
                     L"Setup failed to allocate page array!",
-                    L"ReactOS Setup",
+                    L"ClawOS Setup",
                     MB_ICONERROR | MB_OK);
         goto done;
     }

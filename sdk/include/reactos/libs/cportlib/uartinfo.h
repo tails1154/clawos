@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS ComPort Library
+ * PROJECT:     ClawOS ComPort Library
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  *              or MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Default UART Settings

@@ -1,8 +1,8 @@
 /*
- * PROJECT:     ReactOS Composite Battery Driver
+ * PROJECT:     ClawOS Composite Battery Driver
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Composite battery main header file
- * COPYRIGHT:   Copyright 2010 ReactOS Portable Systems Group <ros.arm@reactos.org>
+ * COPYRIGHT:   Copyright 2010 ClawOS Portable Systems Group <ros.arm@reactos.org>
  *              Copyright 2024 George Bișoc <george.bisoc@reactos.org>
  */
 

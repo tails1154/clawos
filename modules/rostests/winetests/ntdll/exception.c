@@ -1058,7 +1058,7 @@ static void test_exceptions(void)
 #if defined(__REACTOS__)
     if (is_reactos())
     {
-        skip("Skipping test of single stepping behavior and int3 handling on ReactOS due to crashes\n");
+        skip("Skipping test of single stepping behavior and int3 handling on ClawOS due to crashes\n");
         return;
     }
 #endif

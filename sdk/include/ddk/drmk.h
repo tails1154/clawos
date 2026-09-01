@@ -1,5 +1,5 @@
 /*
-    ReactOS Kernel Streaming
+    ClawOS Kernel Streaming
     Digital Rights Management
 
     Author: Andrew Greenwood

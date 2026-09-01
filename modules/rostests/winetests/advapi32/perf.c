@@ -57,7 +57,7 @@ static ULONG WINAPI test_provider_callback(ULONG code, void *buffer, ULONG size)
 void test_provider_init(void)
 {
 #ifdef __REACTOS__
-    skip("test_provider_init() can't be built until ReactOS has implementations for Perf* functions.\n");
+    skip("test_provider_init() can't be built until ClawOS has implementations for Perf* functions.\n");
 #else
     static GUID test_set_guid = {0xdeadbeef, 0x0002, 0x0003, {0x0f, 0x04, 0x05, 0x06, 0x07, 0x08, 0x00 ,0x0a}};
     static GUID test_set_guid2 = {0xdeadbeef, 0x0003, 0x0003, {0x0f, 0x04, 0x05, 0x06, 0x07, 0x08, 0x00 ,0x0a}};

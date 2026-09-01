@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Kernel
+ * PROJECT:     ClawOS Kernel
  * LICENSE:     GPL - See COPYING in the top level directory
  * PURPOSE:     Configuration Manager - Internal Registry APIs
  * PROGRAMMERS: Alex Ionescu <alex.ionescu@reactos.org>

@@ -1,6 +1,6 @@
 /*
- *  ReactOS kernel
- *  Copyright (C) 2003, 2006 ReactOS Team
+ *  ClawOS kernel
+ *  Copyright (C) 2003, 2006 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS hive maker
+ * PROJECT:         ClawOS hive maker
  * FILE:            tools/mkhive/reginf.c
  * PURPOSE:         Inf file import code
  * PROGRAMMERS:     Eric Kohl

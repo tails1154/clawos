@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Kernel Debugger over Network extension driver headers
+ * PROJECT:     ClawOS Kernel Debugger over Network extension driver headers
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Provide the types needed to communicate with Kernel Debugger extensions
  * COPYRIGHT:   Copyright 2022 Hervé Poussineau <hpoussin@reactos.org>

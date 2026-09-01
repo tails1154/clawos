@@ -1,7 +1,7 @@
 /*
  *
  * COPYRIGHT:            See COPYING in the top level directory
- * PROJECT:              ReactOS Multimedia
+ * PROJECT:              ClawOS Multimedia
  * FILE:                 lib/mmdrv/auxil.c
  * PURPOSE:              Multimedia User Mode Driver
  * PROGRAMMER:           Andrew Greenwood

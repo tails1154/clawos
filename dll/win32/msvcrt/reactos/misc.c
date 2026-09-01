@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS msvcrt.dll
+ * PROJECT:     ClawOS msvcrt.dll
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Miscellaneous functions and data
  * COPYRIGHT:   Copyright Timo Kreuzer <timo.kreuzer@reactos.org>

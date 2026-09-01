@@ -19,7 +19,7 @@ endfunction()
 
 function(add_dependency_header)
     if(GENERATE_DEPENDENCY_GRAPH)
-        file(WRITE ${REACTOS_BINARY_DIR}/dependencies.graphml "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<graphml>\n  <graph id=\"ReactOS dependencies\" edgedefault=\"directed\">\n")
+        file(WRITE ${REACTOS_BINARY_DIR}/dependencies.graphml "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<graphml>\n  <graph id=\"ClawOS dependencies\" edgedefault=\"directed\">\n")
     endif()
 endfunction()
 
@@ -574,7 +574,7 @@ function(sign_driver_if_needed TARGET)
     if(NOT MSVC)
         return()
     endif()
-    if(NOT EXISTS "C:/ReactOSCerts/ReactOSDevCert.cer")
+    if(NOT EXISTS "C:/ClawOSCerts/ClawOSDevCert.cer")
         return()
     endif()
     # Get output file name

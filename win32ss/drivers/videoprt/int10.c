@@ -1,7 +1,7 @@
 /*
  * VideoPort driver
  *
- * Copyright (C) 2002, 2003, 2004 ReactOS Team
+ * Copyright (C) 2002, 2003, 2004 ClawOS Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -174,7 +174,7 @@ IntInitializeVideoAddressSpace(VOID)
     /* We should only do that for CSRSS */
     ASSERT(PsGetCurrentProcess() == (PEPROCESS)CsrProcess);
 
-    /* Free the 1MB pre-reserved region. In reality, ReactOS should simply
+    /* Free the 1MB pre-reserved region. In reality, ClawOS should simply
      * support us mapping the view into the reserved area, but it doesn't. */
     BaseAddress = 0;
     ViewSize = 1024 * 1024;

@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            ntoskrnl/ke/except.c
  * PURPOSE:         Platform independent exception handling
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  *                  Alex Ionescu (alex.ionescu@reactos.org)
  */
 

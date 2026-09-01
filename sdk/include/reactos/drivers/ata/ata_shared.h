@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Storage Stack
+ * PROJECT:     ClawOS Storage Stack
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  *              or MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Internal shared ATA driver definitions
@@ -477,7 +477,7 @@ typedef VOID
     _In_ PVOID ControllerContext);
 typedef CONTROLLER_PNP_REMOVE_DEVICE *PCONTROLLER_PNP_REMOVE_DEVICE;
 
-/* ReactOS-specific legacy detection magic */
+/* ClawOS-specific legacy detection magic */
 #define PCIIDEX_GET_CONTROLLER_INTERFACE_SIGNATURE    (0xFFFFFFFF - 0x1000)
 
 /**

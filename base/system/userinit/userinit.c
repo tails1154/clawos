@@ -1,6 +1,6 @@
 /*
- *  ReactOS applications
- *  Copyright (C) 2001, 2002 ReactOS Team
+ *  ClawOS applications
+ *  Copyright (C) 2001, 2002 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS Userinit Logon Application
+ * PROJECT:     ClawOS Userinit Logon Application
  * FILE:        base/system/userinit/userinit.c
  * PROGRAMMERS: Thomas Weidenmueller (w3seek@users.sourceforge.net)
  *              Hervé Poussineau (hpoussin@reactos.org)
@@ -498,7 +498,7 @@ StartInstaller(VOID)
     extern WCHAR Installer[MAX_PATH]; // In livecd.c
     WCHAR szMsg[RC_STRING_MAX_SIZE];
 
-    /* If we have found the ReactOS Installer, start it */
+    /* If we have found the ClawOS Installer, start it */
     if (*Installer && StartProcess(Installer, NULL))
         return TRUE;
 

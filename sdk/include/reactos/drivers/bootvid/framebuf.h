@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Boot Video Driver
+ * PROJECT:     ClawOS Boot Video Driver
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  *              or MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Definitions for framebuffer-specific DisplayController
@@ -15,7 +15,7 @@ extern "C" {
 #endif
 
 /**
- * @brief   ReactOS Framebuffer-specific video device configuration data.
+ * @brief   ClawOS Framebuffer-specific video device configuration data.
  *
  * Supplemental data that extends CM_VIDEO_DEVICE_DATA.
  * It is appended to the standard configuration resource list,

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS API Tests
+ * PROJECT:     ClawOS API Tests
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Test for CertEnumSystemStoreLocation
  * COPYRIGHT:   Copyright 2025 Ratin Gao <ratin@knsoft.org>

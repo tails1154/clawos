@@ -2121,9 +2121,9 @@ static void test__strtod(void)
     for (i=0; i<ARRAY_SIZE(tests); i++)
     {
 #ifdef __REACTOS__
-        if ((i == 19) && IsReactOS())
+        if ((i == 19) && IsClawOS())
         {
-            skip("Skipping i == 19, because it crashes on ReactOS\n");
+            skip("Skipping i == 19, because it crashes on ClawOS\n");
             continue;
         }
 #endif

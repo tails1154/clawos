@@ -1671,7 +1671,7 @@ static void test_class_name(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: ReactOS crashes on test_class_name()!\n");
+        ok(FALSE, "FIXME: ClawOS crashes on test_class_name()!\n");
         return;
     }
 #endif

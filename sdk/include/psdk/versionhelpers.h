@@ -3,7 +3,7 @@
  *
  * Inline helper functions for Windows version detection
  *
- * This file is part of the ReactOS PSDK package.
+ * This file is part of the ClawOS PSDK package.
  *
  * Contributors:
  *   Created by Timo Kreuzer <timo.kreuzer@reactos.org>
@@ -146,7 +146,7 @@ IsActiveSessionCountLimited()
 
 #ifdef __REACTOS__
 VERSIONHELPERAPI
-IsReactOS()
+IsClawOS()
 {
     /* Hardcoded SharedUserData and PAGE_SIZE to avoid NDK includes */
     return *(UINT*)((ULONG_PTR)0x7FFE0000 + 4096 - sizeof(ULONG)) == 0x8EAC705;

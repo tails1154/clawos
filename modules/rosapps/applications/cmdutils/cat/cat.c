@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS conCATenation tool
+ * PROJECT:         ClawOS conCATenation tool
  * FILE:            cmdutils/cat/cat.c
  * PURPOSE:         Concatenates STDIN or an arbitrary number of files to STDOUT
  * PROGRAMMERS:     David Welch
@@ -28,7 +28,7 @@ void help(void)
 {
     fprintf(stdout,
             "\n"
-            "ReactOS File Concatenation Tool\n"
+            "ClawOS File Concatenation Tool\n"
             "\n"
             "Usage: cat [options] [file [...]]\n"
             "options - Currently ignored\n");

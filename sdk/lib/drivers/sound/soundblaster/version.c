@@ -1,5 +1,5 @@
 /*
-    ReactOS Sound System
+    ClawOS Sound System
     Sound Blaster DSP support
     Version routine
 

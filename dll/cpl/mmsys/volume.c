@@ -1,7 +1,7 @@
 /*
- * PROJECT:         ReactOS Multimedia Control Panel
+ * PROJECT:         ClawOS Multimedia Control Panel
  * FILE:            dll/cpl/mmsys/volume.c
- * PURPOSE:         ReactOS Multimedia Control Panel
+ * PURPOSE:         ClawOS Multimedia Control Panel
  * PROGRAMMER:      Thomas Weidenmueller <w3seek@reactos.com>
  *                  Johannes Anderwald <janderwald@reactos.com>
  *                  Dmitry Chapyshev <dmitry@reactos.org>

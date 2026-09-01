@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS API tests
+ * PROJECT:     ClawOS API tests
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Test for NtUserSBGetParms
  * COPYRIGHT:   Copyright 2026 Max Korostil <mrmks04@yandex.ru>

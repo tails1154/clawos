@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS HTTP Daemon
+ * PROJECT:     ClawOS HTTP Daemon
  * FILE:        include/error.h
  */
 #ifndef __ERROR_H

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS msvcrt
+ * PROJECT:     ClawOS msvcrt
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     TLS support code for use with ucrtbase
  * COPYRIGHT:   Copyright 2025 Timo Kreuzer <timo.kreuzer@reactos.org>

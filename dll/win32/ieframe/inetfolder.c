@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS ieframe
+ * PROJECT:     ClawOS ieframe
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Internet IShellFolder implementation
  * COPYRIGHT:   Copyright 2025 Whindmar Saksit <whindsaks@proton.me>

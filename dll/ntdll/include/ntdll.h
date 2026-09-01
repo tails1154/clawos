@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS System Libraries
+ * PROJECT:         ClawOS System Libraries
  * FILE:            dll/ntdll/include/ntdll.h
  * PURPOSE:         Native Library Header
  * PROGRAMMER:      Alex Ionescu (alex@relsoft.net)

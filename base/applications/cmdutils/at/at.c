@@ -1,8 +1,8 @@
 /*
- * PROJECT:     ReactOS AT utility
+ * PROJECT:     ClawOS AT utility
  * COPYRIGHT:   See COPYING in the top level directory
  * FILE:        base/applications/cmdutils/at/at.c
- * PURPOSE:     ReactOS AT utility
+ * PURPOSE:     ClawOS AT utility
  * PROGRAMMERS: Eric Kohl <eric.kohl@reactos.org>
  */
 

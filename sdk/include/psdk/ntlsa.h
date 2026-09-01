@@ -1,7 +1,7 @@
 /*
  * ntlsa.h
  *
- * This file is part of the ReactOS PSDK package.
+ * This file is part of the ClawOS PSDK package.
  *
  * Contributors:
  *   Created by Eric Kohl.

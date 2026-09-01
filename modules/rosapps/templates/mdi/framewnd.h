@@ -1,5 +1,5 @@
 /*
- *  ReactOS Application Main Window
+ *  ClawOS Application Main Window
  *
  *  framewnd.h
  *

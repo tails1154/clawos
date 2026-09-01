@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS Logon User Interface Host
+ * PROJECT:     ClawOS Logon User Interface Host
  * FILE:        base/system/logonui/logonui.c
  * PROGRAMMERS: Ged Murphy (gedmurphy@reactos.org)
  */
@@ -34,7 +34,7 @@ static VOID
 DrawLogoffScreen(HDC hdcMem)
 {
     /* Draw the logoff icon */
-    NT5_CreateLogoffScreen(L"Saving your settings...", hdcMem);
+    NT5_CreateLogoffScreen(L"Saving your ClawOS session...", hdcMem);
 }
 
 #if 0

@@ -761,7 +761,7 @@ static void test_mui(void)
     ok( info->dwLanguageNameOffset == 72, "dwLanguageNameOffset = %ld\n", info->dwLanguageNameOffset );
 #if defined(__REACTOS__) && DLL_EXPORT_VERSION >= 0x600
     if (is_reactos()) {
-        ok(FALSE, "FIXME: These tests crash on ReactOS!\n");
+        ok(FALSE, "FIXME: These tests crash on ClawOS!\n");
     } else {
 #endif
     str = (WCHAR *)(buf + info->dwLanguageNameOffset);
@@ -812,7 +812,7 @@ static void test_mui(void)
     ok( info->dwLanguageNameOffset == 72, "dwLanguageNameOffset = %ld\n", info->dwLanguageNameOffset );
 #if defined(__REACTOS__) && DLL_EXPORT_VERSION >= 0x600
     if (is_reactos()) {
-        ok(FALSE, "FIXME: These tests crash on ReactOS!\n");
+        ok(FALSE, "FIXME: These tests crash on ClawOS!\n");
     } else {
 #endif
     str = (WCHAR *)(buf + info->dwLanguageNameOffset);

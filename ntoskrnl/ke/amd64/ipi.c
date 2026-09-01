@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Kernel
+ * PROJECT:     ClawOS Kernel
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     IPI code for x64
  * COPYRIGHT:   Copyright 2023 Timo Kreuzer <timo.kreuzer@reactos.org>

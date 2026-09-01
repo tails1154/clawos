@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Display Control Panel
+ * PROJECT:         ClawOS Display Control Panel
  * FILE:            dll/cpl/desk/theme.c
  * PURPOSE:         Handling themes and visual effects
  *

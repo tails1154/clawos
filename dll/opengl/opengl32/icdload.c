@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:            See COPYING in the top level directory
- * PROJECT:              ReactOS kernel
+ * PROJECT:              ClawOS kernel
  * FILE:                 lib/opengl32/icdload.c
  * PURPOSE:              OpenGL32 lib, ICD dll loader
  */
@@ -34,7 +34,7 @@ typedef enum
 static CRITICAL_SECTION icdload_cs = {NULL, -1, 0, 0, 0, 0};
 static struct ICD_Data* ICD_Data_List = NULL;
 static const WCHAR OpenGLDrivers_Key[] = L"SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\OpenGLDrivers";
-static const WCHAR CustomDrivers_Key[] = L"SOFTWARE\\ReactOS\\OpenGL";
+static const WCHAR CustomDrivers_Key[] = L"SOFTWARE\\ClawOS\\OpenGL";
 static Drv_Opengl_Info CustomDrvInfo;
 static CUSTOM_DRIVER_STATE CustomDriverState = OGL_CD_NOT_QUERIED;
 
@@ -72,8 +72,8 @@ struct ICD_Data* IntGetIcdData(HDC hdc)
     BOOL (WINAPI *DrvValidateVersion)(DWORD);
     void (WINAPI *DrvSetCallbackProcs)(int nProcs, PROC* pProcs);
 
-    /* The following code is ReactOS specific and allows us to easily load an arbitrary ICD:
-     * It checks HKCU\Software\ReactOS\OpenGL for a custom ICD and will always load it
+    /* The following code is ClawOS specific and allows us to easily load an arbitrary ICD:
+     * It checks HKCU\Software\ClawOS\OpenGL for a custom ICD and will always load it
      * no matter what driver the DC is associated with. It can also force using the
      * built-in Software Implementation*/
     if(CustomDriverState == OGL_CD_NOT_QUERIED)
@@ -93,10 +93,10 @@ struct ICD_Data* IntGetIcdData(HDC hdc)
         if((ret != ERROR_SUCCESS) || (dwValueType != REG_SZ) || !wcslen(CustomDrvInfo.DriverName))
             goto custom_end;
 
-        if(!_wcsicmp(CustomDrvInfo.DriverName, L"ReactOS Software Implementation"))
+        if(!_wcsicmp(CustomDrvInfo.DriverName, L"ClawOS Software Implementation"))
         {
             /* Always announce the fact that we're forcing ROSSWI */
-            ERR("Forcing ReactOS Software Implementation\n");
+            ERR("Forcing ClawOS Software Implementation\n");
             CustomDriverState = OGL_CD_ROSSWI;
             return NULL;
         }

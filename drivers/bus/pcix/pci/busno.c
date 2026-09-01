@@ -1,9 +1,9 @@
 /*
- * PROJECT:         ReactOS PCI Bus Driver
+ * PROJECT:         ClawOS PCI Bus Driver
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            drivers/bus/pci/pci/busno.c
  * PURPOSE:         Bus Number Management
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  */
 
 /* INCLUDES *******************************************************************/

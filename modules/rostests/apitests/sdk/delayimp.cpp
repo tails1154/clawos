@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS API tests
+ * PROJECT:     ClawOS API tests
  * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
  * PURPOSE:     Tests for delayload
  * COPYRIGHT:   Copyright 2023-2025 Mark Jansen <mark.jansen@reactos.org>

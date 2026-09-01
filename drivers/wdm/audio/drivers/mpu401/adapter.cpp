@@ -1,5 +1,5 @@
 /*
-    ReactOS Operating System
+    ClawOS Operating System
     MPU401 Example KS Driver
 
     AUTHORS:

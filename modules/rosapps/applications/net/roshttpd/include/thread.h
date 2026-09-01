@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS HTTP Daemon
+ * PROJECT:     ClawOS HTTP Daemon
  * FILE:        include/thread.h
  */
 #ifndef __THREAD_H

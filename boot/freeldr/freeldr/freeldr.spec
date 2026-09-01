@@ -103,7 +103,7 @@
 @ cdecl IsAcpiPresent()
 @ cdecl LoadSettings()
 @ cdecl MachHwDetect()
-@ cdecl MachPrepareForReactOS()
+@ cdecl MachPrepareForClawOS()
 @ cdecl MachGetExtendedBIOSData()
 @ cdecl MachVideoGetFontsFromFirmware()
 @ cdecl PxeCallApi()

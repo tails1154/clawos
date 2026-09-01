@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS HID Stack
+ * PROJECT:     ClawOS HID Stack
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        drivers/hid/mouhid/mouhid.c
  * PURPOSE:     Mouse HID Driver

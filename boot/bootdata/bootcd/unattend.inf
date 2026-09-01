@@ -1,15 +1,15 @@
 [Unattend]
-Signature = "$ReactOS$"
+Signature = "$ClawOS$"
 
 ; Set UnattendSetupEnabled to yes in order to get unattended setup working.
 ; yes - unattend setup enabled
 ; no - unattend setup disabled
 UnattendSetupEnabled = no
 
-; Install to \Device\Harddisk0\Partition1\ReactOS
+; Install to \Device\Harddisk0\Partition1\ClawOS
 DestinationDiskNumber = 0
 DestinationPartitionNumber = 1
-InstallationDirectory=ReactOS
+InstallationDirectory=ClawOS
 
 ; BootLoaderLocation=0  Skip installation
 ; BootLoaderLocation=1  Install on removable media (floppy)
@@ -53,10 +53,10 @@ RappsDownload = no
 LocaleID = 409
 
 ; Set installation type.
-; 0 - ReactOS Server
-; 1 - ReactOS Workstation
-; 2 - ReactOS Server Core
-; 3 - ReactOS Nano Server (Reserved)
+; 0 - ClawOS Server
+; 1 - ClawOS Workstation
+; 2 - ClawOS Server Core
+; 3 - ClawOS Nano Server (Reserved)
 InstallationType = 0
 
 ;[GuiUnattended]
@@ -84,7 +84,7 @@ InstallationType = 0
 ;[Env]
 ;WINETEST_PLATFORM=reactos
 
-; Enable this section to enable the default ReactOS theme.
-;[Shell]
-;DefaultThemesOff = no
-;CustomDefaultThemeFile = "%WINDIR%\Resources\Themes\Lautus\lautus.msstyles"
+; Enable this section to apply a different default shell theme.
+[Shell]
+DefaultThemesOff = no
+CustomDefaultThemeFile = "%WINDIR%\Resources\Themes\Mizu\mizu.msstyles"

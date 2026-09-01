@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Zip Shell Extension
+ * PROJECT:     ClawOS Zip Shell Extension
  * LICENSE:     GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
  * PURPOSE:     zipfldr entrypoint
  * COPYRIGHT:   Copyright 2017 Mark Jansen (mark.jansen@reactos.org)
@@ -94,7 +94,7 @@ UINT GetZipCodePage(BOOL bUnZip)
     DWORD dwType, cbValue = sizeof(szValue);
     UINT nDefaultCodePage = (bUnZip ? CP_ACP : CP_UTF8);
 
-    LONG error = SHGetValueW(HKEY_CURRENT_USER, L"Software\\ReactOS",
+    LONG error = SHGetValueW(HKEY_CURRENT_USER, L"Software\\ClawOS",
                              (bUnZip ? L"UnZipCodePage" : L"ZipCodePage"),
                              &dwType, szValue, &cbValue);
     if (error != ERROR_SUCCESS)

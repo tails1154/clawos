@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS GDI32
+ * PROJECT:     ClawOS GDI32
  * LICENSE:     GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
  * PURPOSE:     Font manipulation API
  * COPYRIGHT:   Copyright 2019 James Tabor

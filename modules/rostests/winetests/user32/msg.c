@@ -12686,7 +12686,7 @@ static void test_recursive_hook(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: Recursive msg tests crash on ReactOS!\n");
+        ok(FALSE, "FIXME: Recursive msg tests crash on ClawOS!\n");
         return;
     }
 #endif
@@ -12801,7 +12801,7 @@ static void test_recursive_messages(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: Recursive msg tests crash on ReactOS!\n");
+        ok(FALSE, "FIXME: Recursive msg tests crash on ClawOS!\n");
         return;
     }
 #endif

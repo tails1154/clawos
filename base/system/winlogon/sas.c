@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Winlogon
+ * PROJECT:         ClawOS Winlogon
  * FILE:            base/system/winlogon/sas.c
  * PURPOSE:         Secure Attention Sequence
  * PROGRAMMERS:     Thomas Weidenmueller (w3seek@users.sourceforge.net)
@@ -44,7 +44,7 @@ typedef struct tagLOGOFF_SHUTDOWN_DATA
     PWLSESSION Session;
 } LOGOFF_SHUTDOWN_DATA, *PLOGOFF_SHUTDOWN_DATA;
 
-static BOOL ExitReactOSInProgress = FALSE;
+static BOOL ExitClawOSInProgress = FALSE;
 
 LUID LuidNone = {0, 0};
 
@@ -757,9 +757,9 @@ LogoffShutdownThread(
     uFlags = EWX_CALLER_WINLOGON | (LSData->Flags & 0x0F);
 
     TRACE("In LogoffShutdownThread with uFlags == 0x%x; exit_in_progress == %s\n",
-        uFlags, ExitReactOSInProgress ? "TRUE" : "FALSE");
+        uFlags, ExitClawOSInProgress ? "TRUE" : "FALSE");
 
-    ExitReactOSInProgress = TRUE;
+    ExitClawOSInProgress = TRUE;
 
     /* Close processes of the interactive user */
     if (!ExitWindowsEx(uFlags, 0))
@@ -1679,7 +1679,7 @@ SASWindowProc(
                         ERR("Unhandled EWX_* action flags: 0x%x\n", Action);
 
                     TRACE("In LN_LOGOFF, exit_in_progress == %s\n",
-                        ExitReactOSInProgress ? "TRUE" : "FALSE");
+                        ExitClawOSInProgress ? "TRUE" : "FALSE");
 
                     /*
                      * In case a parallel shutdown request is done (while we are
@@ -1692,8 +1692,8 @@ SASWindowProc(
 // etc... and as a result you just get explorer opening "My Documents". And
 // if you try now a shut down, it won't work because winlogon thinks it is
 // still in the middle of a shutdown.
-// Maybe we also need to reset ExitReactOSInProgress somewhere else??
-                    if (ExitReactOSInProgress && (lParam & EWX_CALLER_WINLOGON) == 0)
+// Maybe we also need to reset ExitClawOSInProgress somewhere else??
+                    if (ExitClawOSInProgress && (lParam & EWX_CALLER_WINLOGON) == 0)
                     {
                         break;
                     }
@@ -1705,9 +1705,9 @@ SASWindowProc(
                 case LN_LOGOFF_CANCELED:
                 {
                     ERR("Logoff canceled! Before: exit_in_progress == %s; After: FALSE\n",
-                        ExitReactOSInProgress ? "TRUE" : "FALSE");
+                        ExitClawOSInProgress ? "TRUE" : "FALSE");
 
-                    ExitReactOSInProgress = FALSE;
+                    ExitClawOSInProgress = FALSE;
                     return 1;
                 }
                 default:

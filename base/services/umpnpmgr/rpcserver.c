@@ -1,6 +1,6 @@
 /*
- *  ReactOS kernel
- *  Copyright (C) 2005 ReactOS Team
+ *  ClawOS kernel
+ *  Copyright (C) 2005 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          ClawOS kernel
  * FILE:             base/services/umpnpmgr/rpcserver.c
  * PURPOSE:          RPC server
  * PROGRAMMER:       Eric Kohl (eric.kohl@reactos.org)

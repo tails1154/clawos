@@ -1,5 +1,5 @@
 /*
- * ReactOS Shell
+ * ClawOS Shell
  *
  * Copyright 2016 Giannis Adamopoulos
  *

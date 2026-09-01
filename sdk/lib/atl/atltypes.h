@@ -1,5 +1,5 @@
 /*
- * ReactOS ATL
+ * ClawOS ATL
  *
  * Copyright 2016 Mark Jansen
  *

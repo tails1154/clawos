@@ -1,7 +1,7 @@
 /*
- * PROJECT:         ReactOS Multimedia Control Panel
+ * PROJECT:         ClawOS Multimedia Control Panel
  * FILE:            dll/cpl/mmsys/speakervolume.c
- * PURPOSE:         ReactOS Multimedia Control Panel
+ * PURPOSE:         ClawOS Multimedia Control Panel
  * PROGRAMMER:      Eric Kohl <eric.kohl@reactos.com>
  */
 

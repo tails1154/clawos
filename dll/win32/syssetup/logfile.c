@@ -1,6 +1,6 @@
 /*
- *  ReactOS kernel
- *  Copyright (C) 2003 ReactOS Team
+ *  ClawOS kernel
+ *  Copyright (C) 2003 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:         See COPYING in the top level directory
- * PROJECT:           ReactOS system libraries
+ * PROJECT:           ClawOS system libraries
  * PURPOSE:           Log file functions
  * FILE:              lib/syssetup/logfile.c
  * PROGRAMER:         Eric Kohl

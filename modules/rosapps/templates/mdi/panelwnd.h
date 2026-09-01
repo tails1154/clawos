@@ -1,5 +1,5 @@
 /*
- *  ReactOS Application MDI Child Panel Window
+ *  ClawOS Application MDI Child Panel Window
  *
  *  panelwnd.h
  *

@@ -1,5 +1,5 @@
 /*
- *  ReactOS Application
+ *  ClawOS Application
  *
  *  panelwnd.c
  *

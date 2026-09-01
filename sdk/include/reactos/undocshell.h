@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Shell
+ * PROJECT:     ClawOS Shell
  * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
  * PURPOSE:     Undocumented shell definitions
  * COPYRIGHT:   Copyright 1999, 2000 Juergen Schmied
@@ -26,7 +26,7 @@
 extern "C" {
 #endif /* defined(__cplusplus) */
 
-// Because ReactOS installs as Server by default, we ignore OS_SERVERADMINUI
+// Because ClawOS installs as Server by default, we ignore OS_SERVERADMINUI
 // in certain places to present a Client/Server hybrid UI.
 
 // Windows defaults to FVM_DETAILS for Administrators on OS_ANYSERVER (instead of FVM_ICON).

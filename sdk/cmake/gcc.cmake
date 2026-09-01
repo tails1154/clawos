@@ -395,7 +395,7 @@ function(set_image_base MODULE IMAGE_BASE)
 endfunction()
 
 function(set_module_type_toolchain MODULE TYPE)
-    # Set the PE image version numbers from the NT OS version ReactOS is based on
+    # Set the PE image version numbers from the NT OS version ClawOS is based on
     target_link_options(${MODULE} PRIVATE
         -Wl,--major-image-version,5 -Wl,--minor-image-version,01 -Wl,--major-os-version,5 -Wl,--minor-os-version,01)
 
@@ -645,7 +645,7 @@ if(LIBWINPTHREAD_LOCATION MATCHES "mingw32")
     message(STATUS "Using libwinpthread from ${LIBWINPTHREAD_LOCATION}")
     set_target_properties(libwinpthread PROPERTIES IMPORTED_LOCATION ${LIBWINPTHREAD_LOCATION})
     # libwinpthread needs kernel32 imports, a CRT and msvcrtex.
-    # The ReactOS CRT target does not currently export every import thunk the
+    # The ClawOS CRT target does not currently export every import thunk the
     # toolchain's libwinpthread expects, so generate a tiny import lib for the
     # missing mingw CRT entry points instead of linking the full CRT archive.
     set(LIBGCC_MSVCRT_DEF ${CMAKE_BINARY_DIR}/sdk/cmake/libgcc_msvcrt.def)

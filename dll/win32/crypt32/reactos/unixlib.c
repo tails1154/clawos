@@ -1,7 +1,7 @@
 /*
- * PROJECT:     ReactOS win32 DLLs
+ * PROJECT:     ClawOS win32 DLLs
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
- * PURPOSE:     ReactOS emulation layer for crypt32 unixlib calls
+ * PURPOSE:     ClawOS emulation layer for crypt32 unixlib calls
  * COPYRIGHT:   Copyright 2026 Timo Kreuzer <timo.kreuzer@reactos.org>
  */
 #include <assert.h>

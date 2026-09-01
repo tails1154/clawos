@@ -1,6 +1,6 @@
 /*
- *  ReactOS applications
- *  Copyright (C) 2001, 2002, 2003 ReactOS Team
+ *  ClawOS applications
+ *  Copyright (C) 2001, 2002, 2003 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS "Welcome"/AutoRun application
+ * PROJECT:     ClawOS "Welcome"/AutoRun application
  * FILE:        base/setup/welcome/welcome.c
  * PROGRAMMERS: Eric Kohl
  *              Casper S. Hornstrup (chorns@users.sourceforge.net)
@@ -212,7 +212,7 @@ VOID TranslateEscapes(IN OUT LPTSTR lpString)
 
 /**
  * @brief
- * Expands the path for the ReactOS Installer "reactos.exe".
+ * Expands the path for the ClawOS Installer "reactos.exe".
  * See also base/system/userinit/livecd.c!ExpandInstallerPath()
  **/
 static BOOL
@@ -309,7 +309,7 @@ ExpandInstallerPath(
 
     /*
      * We failed. Try to find the installer from either the current
-     * ReactOS installation directory, or from our current directory.
+     * ClawOS installation directory, or from our current directory.
      */
     *pInstallerPath = 0;
     if (GetWindowsDirectory(pInstallerPath, PathSize - cchInstallerNameLen - 1))
@@ -395,7 +395,7 @@ AddNewTopicEx(
     {
         pTopic->bIsCommand = TRUE;
 
-        /* Check for special applications: ReactOS Installer */
+        /* Check for special applications: ClawOS Installer */
         if (_tcsicmp(szCommand, TEXT("reactos.exe")) == 0)
         {
             ExpandInstallerPath(szCommand, pTopic->szCommand, ARRAYSIZE(pTopic->szCommand));
@@ -425,7 +425,7 @@ AddNewTopicEx(
         }
         else
         {
-            /* Check for special applications: ReactOS Shell */
+            /* Check for special applications: ClawOS Shell */
             if (/* pTopic->szCommand && */ *pTopic->szCommand &&
                 _tcsicmp(pTopic->szCommand, TEXT("explorer.exe")) == 0)
             {
@@ -556,7 +556,7 @@ LoadLocalizedResourcesFromINI(LCID Locale, LPTSTR lpResPath)
     }
 
     /* Try to load the default localized strings */
-    GetPrivateProfileString(TEXT("Defaults"), TEXT("AppTitle"), TEXT("ReactOS - Welcome") /* default */,
+    GetPrivateProfileString(TEXT("Defaults"), TEXT("AppTitle"), TEXT("ClawOS - Welcome") /* default */,
                             szAppTitle, ARRAYSIZE(szAppTitle), szIniPath);
     GetPrivateProfileString(TEXT("Defaults"), TEXT("DefaultTopicTitle"), TEXT("") /* default */,
                             szDefaultTitle, ARRAYSIZE(szDefaultTitle), szIniPath);
@@ -651,7 +651,7 @@ LoadConfiguration(VOID)
      * They can be redefined by the localized INI files.
      */
     if (!LoadString(hInstance, IDS_APPTITLE, szAppTitle, ARRAYSIZE(szAppTitle)))
-        StringCchCopy(szAppTitle, ARRAYSIZE(szAppTitle), TEXT("ReactOS - Welcome"));
+        StringCchCopy(szAppTitle, ARRAYSIZE(szAppTitle), TEXT("ClawOS - Welcome"));
     if (!LoadString(hInstance, IDS_DEFAULT_TOPIC_TITLE, szDefaultTitle, ARRAYSIZE(szDefaultTitle)))
         *szDefaultTitle = 0;
     if (!LoadString(hInstance, IDS_DEFAULT_TOPIC_DESC, szDefaultDesc, ARRAYSIZE(szDefaultDesc)))
@@ -1003,7 +1003,7 @@ RunAction(INT nTopic)
 
         if (!_tcsnicmp(Command, TEXT("<msg>"), 5))
         {
-            MessageBox(hWndMain, Command + 5, TEXT("ReactOS"), MB_OK | MB_TASKMODAL);
+            MessageBox(hWndMain, Command + 5, TEXT("ClawOS"), MB_OK | MB_TASKMODAL);
             return TRUE;
         }
     }
@@ -1353,7 +1353,7 @@ OnPaint(HWND hWnd, WPARAM wParam, LPARAM lParam)
 
     /* Draw version information */
     StringCchCopy(szVersion, ARRAYSIZE(szVersion),
-                  TEXT("ReactOS ") TEXT(KERNEL_VERSION_STR));
+                  TEXT("ClawOS ") TEXT(KERNEL_VERSION_STR));
 
     /*
      * Compute the original rect (position & size) of the version info,

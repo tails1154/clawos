@@ -2486,7 +2486,7 @@ static void test_DuplicateHandle(void)
 
 #if defined(__REACTOS__) && defined(_WIN64)
     if (is_reactos()) {
-        ok(FALSE, "FIXME: test_DuplicateHandle() deadlocks on ReactOS x64!\n");
+        ok(FALSE, "FIXME: test_DuplicateHandle() deadlocks on ClawOS x64!\n");
         return;
     }
 #endif
@@ -3538,7 +3538,7 @@ static void test_StdHandleInheritance(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: These std handle tests on ReactOS confuses rosautotest\n");
+        ok(FALSE, "FIXME: These std handle tests on ClawOS confuses rosautotest\n");
         return;
     }
 #endif
@@ -5767,7 +5767,7 @@ START_TEST(process)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: ReactOS's job support is too basic for these tests.\n");
+        ok(FALSE, "FIXME: ClawOS's job support is too basic for these tests.\n");
         return;
     }
 #endif

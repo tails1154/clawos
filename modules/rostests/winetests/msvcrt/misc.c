@@ -397,7 +397,7 @@ static void test__popen(const char *name)
     ok(ret != EOF, "fputs returned %x\n", ret);
 
 #ifdef __REACTOS__
-    if (IsReactOS())
+    if (IsClawOS())
     {
         skip("Skipping _pclose, because it hangs on reactos\n");
         return;

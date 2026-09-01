@@ -444,7 +444,7 @@ static void test_HeapCreate(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: The rest of this test crashes on ReactOS!\n");
+        ok(FALSE, "FIXME: The rest of this test crashes on ClawOS!\n");
         return;
     }
 #endif
@@ -1763,7 +1763,7 @@ static void test_GlobalAlloc(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: invalid handle and invalid pointer tests crash on ReactOS!\n");
+        ok(FALSE, "FIXME: invalid handle and invalid pointer tests crash on ClawOS!\n");
     } else {
 #endif
     /* invalid handles are caught */
@@ -2557,7 +2557,7 @@ static void test_LocalAlloc(void)
 
 #ifdef __REACTOS__
     if (is_reactos()) {
-        ok(FALSE, "FIXME: invalid handle and invalid pointer tests crash on ReactOS!\n");
+        ok(FALSE, "FIXME: invalid handle and invalid pointer tests crash on ClawOS!\n");
     } else {
 #endif
     /* invalid handles are caught */
@@ -4057,7 +4057,7 @@ START_TEST(heap)
 
 #if defined(__REACTOS__) && defined(SKIPBADHEAP_K32_WINETEST)
     if (is_reactos()) {
-        ok(FALSE, "FIXME: These tests are too rough on ReactOS heap manager on x64. It will eventually finish but it takes over an hour to complete the test suite with it which isn't acceptable.\n");
+        ok(FALSE, "FIXME: These tests are too rough on ClawOS heap manager on x64. It will eventually finish but it takes over an hour to complete the test suite with it which isn't acceptable.\n");
         return;
     }
 #endif

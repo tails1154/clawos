@@ -513,7 +513,7 @@
 
 #ifdef __REACTOS__
   FT_EXPORT_DEF( FT_Error )
-  FT_Bitmap_Convert_ReactOS_Hack( FT_Library        library,
+  FT_Bitmap_Convert_ClawOS_Hack( FT_Library        library,
                                   const FT_Bitmap  *source,
                                   FT_Bitmap        *target,
                                   FT_Int            alignment,
@@ -830,7 +830,7 @@
                      FT_Bitmap        *target,
                      FT_Int            alignment )
   {
-    return FT_Bitmap_Convert_ReactOS_Hack(library, source, target, alignment, FALSE);
+    return FT_Bitmap_Convert_ClawOS_Hack(library, source, target, alignment, FALSE);
   }
 #endif
 

@@ -1285,7 +1285,7 @@ PcVideoSync(VOID)
 }
 
 VOID
-PcVideoPrepareForReactOS(VOID)
+PcVideoPrepareForClawOS(VOID)
 {
     // PcVideoSetMode80x50_80x43();
     PcVideoSetMode80x25();

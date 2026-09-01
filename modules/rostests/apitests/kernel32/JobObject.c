@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS API Tests
+ * PROJECT:     ClawOS API Tests
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Tests for the job object UI restrictions
  * COPYRIGHT:   Copyright 2026 Justin Miller <justin.miller@reactos.org>

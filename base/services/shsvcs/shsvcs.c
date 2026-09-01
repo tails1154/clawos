@@ -1,8 +1,8 @@
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS Shell
+ * PROJECT:          ClawOS Shell
  * FILE:             base/services/shsvcs/shsvcs.c
- * PURPOSE:          ReactOS Shell Services
+ * PURPOSE:          ClawOS Shell Services
  * PROGRAMMER:       Giannis Adamopoulos
  */
 

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS API Tests
+ * PROJECT:     ClawOS API Tests
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Tests for the Rtl memory/port resource descriptor encoding API:
  *              RtlCmEncodeMemIoResource, RtlCmDecodeMemIoResource,

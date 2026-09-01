@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Display Driver Model
+ * PROJECT:     ClawOS Display Driver Model
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Header file for WDDM style DDIs
  * COPYRIGHT:   Copyright 2024 Justin Miller <justin.miller@reactos.org>

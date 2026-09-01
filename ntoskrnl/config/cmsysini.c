@@ -1,8 +1,8 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         ClawOS Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * PURPOSE:         Configuration Manager - System Initialization Code
- * PROGRAMMERS:     ReactOS Portable Systems Group
+ * PROGRAMMERS:     ClawOS Portable Systems Group
  *                  Alex Ionescu (alex.ionescu@reactos.org)
  */
 
@@ -567,7 +567,7 @@ CmpCreateControlSet(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
     PLOADER_PARAMETER_EXTENSION LoaderExtension;
     PAGED_CODE();
 
-    /* ReactOS Hack: Hard-code current to 001 for SetupLdr */
+    /* ClawOS Hack: Hard-code current to 001 for SetupLdr */
     if (LoaderBlock->RegistryBase == NULL)
     {
         /* Build the ControlSet001 key */
@@ -692,7 +692,7 @@ CmpCreateControlSet(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
         goto Cleanup;
     }
 
-    /* ReactOS Hack: Hard-code current to 001 for SetupLdr */
+    /* ClawOS Hack: Hard-code current to 001 for SetupLdr */
     if (LoaderBlock->RegistryBase == NULL)
     {
         HwProfile = 0;
@@ -764,7 +764,7 @@ CmpCreateControlSet(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
     LoaderExtension = LoaderBlock->Extension;
     if (LoaderExtension)
     {
-        DPRINT("ReactOS doesn't support NTLDR Profiles yet!\n");
+        DPRINT("ClawOS doesn't support NTLDR Profiles yet!\n");
     }
 
     /* Create the current hardware profile key */
@@ -870,7 +870,7 @@ CmpLinkHiveToMaster(IN PUNICODE_STRING LinkName,
     /* Mark the hive as clean */
     RegistryHive->Hive.DirtyFlag = FALSE;
 
-    /* ReactOS Hack: Keep alive */
+    /* ClawOS Hack: Keep alive */
     Status = ObReferenceObjectByHandle(KeyHandle,
                                        0,
                                        CmpKeyObjectType,

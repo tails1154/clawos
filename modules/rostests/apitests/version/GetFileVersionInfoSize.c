@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS API Tests
+ * PROJECT:     ClawOS API Tests
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Tests for GetFileVersionInfoSize[A/W]
  * COPYRIGHT:   Copyright 2024 Timo Kreuzer <timo.kreuzer@reactos.org>

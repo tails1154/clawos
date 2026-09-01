@@ -1,5 +1,5 @@
 /*
- *  ReactOS
+ *  ClawOS
  *
  *  regdump.h
  *

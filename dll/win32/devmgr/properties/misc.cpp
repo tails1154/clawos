@@ -1,6 +1,6 @@
 /*
- * ReactOS Device Manager Applet
- * Copyright (C) 2004 - 2005 ReactOS Team
+ * ClawOS Device Manager Applet
+ * Copyright (C) 2004 - 2005 ClawOS Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,9 +17,9 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 /*
- * PROJECT:         ReactOS devmgr.dll
+ * PROJECT:         ClawOS devmgr.dll
  * FILE:            lib/devmgr/misc.c
- * PURPOSE:         ReactOS Device Manager
+ * PURPOSE:         ClawOS Device Manager
  * PROGRAMMER:      Thomas Weidenmueller <w3seek@reactos.com>
  * UPDATE HISTORY:
  *      2005/11/24  Created

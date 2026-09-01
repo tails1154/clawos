@@ -1,7 +1,7 @@
 /*
  * fltwinerror.h
  *
- * This file is part of the ReactOS DDK package.
+ * This file is part of the ClawOS DDK package.
  *
  * Contributors:
  *   Amine Khaldi (amine.khaldi@reactos.org)

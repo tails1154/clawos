@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS IMM32
+ * PROJECT:     ClawOS IMM32
  * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
  * PURPOSE:     Implementing IMM32 helper functions
  * COPYRIGHT:   Copyright 1998 Patrik Stridvall
@@ -214,7 +214,7 @@ LPVOID FASTCALL ValidateHandleNoErr(HANDLE hObject, UINT uType)
 
     ht = gSharedInfo.aheList; /* handle table */
     ASSERT(ht);
-    /* ReactOS-Specific! */
+    /* ClawOS-Specific! */
     ASSERT(gSharedInfo.ulSharedDelta != 0);
     he = (PUSER_HANDLE_ENTRY)((ULONG_PTR)ht->handles - gSharedInfo.ulSharedDelta);
 

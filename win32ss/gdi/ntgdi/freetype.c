@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS win32 kernel mode subsystem
+ * PROJECT:         ClawOS win32 kernel mode subsystem
  * LICENSE:         GPL - See COPYING in the top level directory
  * PURPOSE:         FreeType font engine interface
  * PROGRAMMERS:     Copyright 2001 Huw D M Davies for CodeWeavers.
@@ -1562,7 +1562,7 @@ static BOOL select_charmap(FT_Face ft_face, FT_Encoding encoding)
         }
 #ifdef __REACTOS__
 // Wine bug: for each loop iteration, a FT_Set_Charmap() call is made.
-// ReactOS fix: Instead, loop until we retrieve all the cmap pointers
+// ClawOS fix: Instead, loop until we retrieve all the cmap pointers
 // of interest, then do one single FT_Set_Charmap() call using the
 // preferred cmap.
     }{
@@ -3852,7 +3852,7 @@ IntGetBitmapGlyphWithCache(
 
     BitmapGlyph = (FT_BitmapGlyph)GlyphCopy;
     FT_Bitmap_New(&AlignedBitmap);
-    if (FT_Bitmap_Convert_ReactOS_Hack(GlyphSlot->library, &BitmapGlyph->bitmap,
+    if (FT_Bitmap_Convert_ClawOS_Hack(GlyphSlot->library, &BitmapGlyph->bitmap,
                                        &AlignedBitmap, 4, TRUE))
     {
         DPRINT1("Conversion failed\n");

@@ -12,6 +12,6 @@ CAPTION "About Dialog_InitVisible"
 FONT 8, "MS Shell Dlg"
 BEGIN
     LTEXT           "Dialog_InitVisible, Version 1.0", IDC_STATIC, 7, 14, 114, 8, SS_NOPREFIX
-    LTEXT           "Copyright (C) 2026 ReactOS", IDC_STATIC, 7, 26, 114, 8
+    LTEXT           "Copyright (C) 2026 ClawOS", IDC_STATIC, 7, 26, 114, 8
     DEFPUSHBUTTON   "OK", IDOK, 78, 41, 50, 14, WS_GROUP
 END

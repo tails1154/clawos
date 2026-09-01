@@ -1,6 +1,6 @@
 /*
- * ReactOS Swedish ASCII Keyboard layout
- * Copyright (C) 2004 ReactOS
+ * ClawOS Swedish ASCII Keyboard layout
+ * Copyright (C) 2004 ClawOS
  * License: LGPL, see: LGPL.txt
  *
  * Thanks to: http://www.barcodeman.com/altek/mule/scandoc.php
@@ -354,10 +354,10 @@ ROSDATA VSC_LPWSTR extended_key_names[] = {
   { 0x51, L"PAGE DOWN" },
   { 0x52, L"INS" },
   { 0x53, L"DEL" },
-  { 0x54, L"<ReactOS>" },
+  { 0x54, L"<ClawOS>" },
   { 0x56, L"HELP" },
-  { 0x5b, L"V\x00C4NSTER <ReactOS>" },
-  { 0x5c, L"H\x00D6GER <ReactOS>" },
+  { 0x5b, L"V\x00C4NSTER <ClawOS>" },
+  { 0x5c, L"H\x00D6GER <ClawOS>" },
   { 0x5d, L"Program" },
   { 0, NULL }
 };

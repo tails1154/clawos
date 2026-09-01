@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Kernel Streaming
+ * PROJECT:         ClawOS Kernel Streaming
  * FILE:            drivers/ksfilter/ks/device.c
  * PURPOSE:         KS IKsDevice interface functions
  * PROGRAMMER:      Johannes Anderwald
@@ -584,11 +584,11 @@ IKsDevice_Create(
 
     if (IoStack->FileObject->FileName.Buffer == NULL)
     {
-        // ReactOS PnPMgr still sucks
+        // ClawOS PnPMgr still sucks
         ASSERT(IoStack->FileObject->FileName.Length == 0);
         Irp->IoStatus.Status = STATUS_SUCCESS;
         IoCompleteRequest(Irp, IO_NO_INCREMENT);
-        DPRINT1("ReactOS PnP hack\n");
+        DPRINT1("ClawOS PnP hack\n");
         return STATUS_SUCCESS;
     }
 

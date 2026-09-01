@@ -29,13 +29,13 @@
 // --------------------------------------------------------------------
 //
 // 1999 February (Emanuele Aliberti)
-//      Adapted for ReactOS and lcc-win32.
+//      Adapted for ClawOS and lcc-win32.
 //
 // 1999 April (Emanuele Aliberti)
-//      Adapted for ReactOS and egcs.
+//      Adapted for ClawOS and egcs.
 //
 // 2008 July (Aleksey Bragin)
-//      Cleanup, use ReactOS's fmifs.h
+//      Cleanup, use ClawOS's fmifs.h
 //
 //======================================================================
 

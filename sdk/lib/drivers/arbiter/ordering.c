@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Arbitration Library
+ * PROJECT:     ClawOS Arbitration Library
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Ordering lists and the registry assignment ordering
  * COPYRIGHT:   Copyright 2026 Justin Miller <justin.miller@reactos.org>

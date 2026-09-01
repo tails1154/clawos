@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS Logon User Interface Host
+ * PROJECT:     ClawOS Logon User Interface Host
  * FILE:        base/system/logonui/NT5design.c
  * PROGRAMMERS: Ged Murphy (gedmurphy@reactos.org)
  */
@@ -11,8 +11,8 @@
 
 /* GLOBALS ******************************************************************/
 
-#define NT5_TOP_BORDER_HEIGHT       80
-#define NT5_BOTTOM_BORDER_HEIGHT    96
+#define NT5_TOP_BORDER_HEIGHT       56
+#define NT5_BOTTOM_BORDER_HEIGHT    72
 
 
 /* FUNCTIONS ****************************************************************/
@@ -29,9 +29,9 @@ NT5_DrawLogoffCaptionText(LPWSTR lpText,
     /* Setup the font we'll use */
     ZeroMemory(&LogFont, sizeof(LOGFONTW));
     LogFont.lfCharSet = DEFAULT_CHARSET;
-    LogFont.lfHeight = 22;
-    LogFont.lfWeight = 109; // From WinXP disassembly
-    StringCchCopyW(LogFont.lfFaceName, _countof(LogFont.lfFaceName), L"Arial");
+    LogFont.lfHeight = 21;
+    LogFont.lfWeight = FW_SEMIBOLD;
+    StringCchCopyW(LogFont.lfFaceName, _countof(LogFont.lfFaceName), L"Tahoma");
 
     /* Create it */
     hFont = CreateFontIndirectW(&LogFont);
@@ -39,13 +39,13 @@ NT5_DrawLogoffCaptionText(LPWSTR lpText,
     {
         /* Set the font and font colour */
         SelectObject(hdcMem, hFont);
-        SetTextColor(hdcMem, RGB(255, 255, 255));
+        SetTextColor(hdcMem, RGB(240, 242, 245));
 
         /* Create the text rect */
-        TextRect.top = (g_pInfo->cy / 2) + 34;
-        TextRect.bottom = (g_pInfo->cy / 2) + 34 + (GetDeviceCaps(hdcMem, LOGPIXELSY));
+        TextRect.top = (g_pInfo->cy / 2) + 12;
+        TextRect.bottom = (g_pInfo->cy / 2) + 12 + (GetDeviceCaps(hdcMem, LOGPIXELSY));
         TextRect.left = g_pInfo->cx / 3;
-        TextRect.right = (g_pInfo->cx / 2) + 35 + 137;
+        TextRect.right = (g_pInfo->cx / 2) + 35 + 150;
 
         /* Set the background mode to transparent */
         PrevBkMode = SetBkMode(hdcMem, TRANSPARENT);
@@ -55,7 +55,7 @@ NT5_DrawLogoffCaptionText(LPWSTR lpText,
                   lpText,
                   -1,
                   &TextRect,
-                  DT_NOPREFIX | DT_WORDBREAK | DT_RIGHT); // WinXP disassembly uses 0x812
+                  DT_NOPREFIX | DT_WORDBREAK | DT_RIGHT);
 
         /* Set the previous background mode */
         SetBkMode(hdcMem, PrevBkMode);
@@ -93,8 +93,8 @@ NT5_DrawLogoffIcon(HDC hdcMem)
 
             /* Paint it onto the centre block */
             BitBlt(hdcMem,
-                   (g_pInfo->cx / 2) + 35,
-                   (g_pInfo->cy / 2) - 72,
+                   (g_pInfo->cx / 2) + 28,
+                   (g_pInfo->cy / 2) - 66,
                    bitmap.bmWidth,
                    bitmap.bmHeight,
                    hTempDC,
@@ -156,14 +156,25 @@ NT5_DrawBaseBackground(HDC hdcDesktop)
                 BITMAP bitmap;
                 HDC hTempDC;
 
-                /* Paint the blue centre block */
-                hBrush = CreateSolidBrush(RGB(90, 126, 220));
+                /* Paint the dark centre block */
+                hBrush = CreateSolidBrush(RGB(32, 34, 40));
                 SelectObject(hdcMem, hBrush);
                 PatBlt(hdcMem,
                         0,
                         NT5_TOP_BORDER_HEIGHT,
                         g_pInfo->cx,
                         g_pInfo->cy - NT5_TOP_BORDER_HEIGHT - NT5_BOTTOM_BORDER_HEIGHT,
+                        PATCOPY);
+                DeleteObject(hBrush);
+
+                /* Add a thin accent strip for a more modern look */
+                hBrush = CreateSolidBrush(RGB(74, 167, 153));
+                SelectObject(hdcMem, hBrush);
+                PatBlt(hdcMem,
+                        0,
+                        NT5_TOP_BORDER_HEIGHT,
+                        g_pInfo->cx,
+                        4,
                         PATCOPY);
                 DeleteObject(hBrush);
 
@@ -213,8 +224,8 @@ NT5_DrawBaseBackground(HDC hdcDesktop)
                 BITMAP bitmap;
                 HDC hTempDC;
 
-                /* Create the blue brush and paint the top bar */
-                hBrush = CreateSolidBrush(RGB(0, 48, 156));
+                /* Create the dark brush and paint the top bar */
+                hBrush = CreateSolidBrush(RGB(18, 19, 22));
                 SelectObject(hdcMem, hBrush);
                 PatBlt(hdcMem, 0, 0, g_pInfo->cx, NT5_TOP_BORDER_HEIGHT, PATCOPY);
                 DeleteObject(hBrush);

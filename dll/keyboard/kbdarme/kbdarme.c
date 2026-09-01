@@ -1,6 +1,6 @@
 /*
- * ReactOS Armenian Eastern Keyboard layout
- * Copyright (C) 2008 ReactOS
+ * ClawOS Armenian Eastern Keyboard layout
+ * Copyright (C) 2008 ClawOS
  * Author: Komarov Alexey
  * License: LGPL, see: LGPL.txt
  *
@@ -325,10 +325,10 @@ ROSDATA VSC_LPWSTR extended_key_names[] = {
   { 0x51, L"Page Down" },
   { 0x52, L"Insert" },
   { 0x53, L"Delete" },
-  { 0x54, L"<ReactOS>" },
+  { 0x54, L"<ClawOS>" },
   { 0x56, L"Help" },
-  { 0x5b, L"Left <ReactOS>" },
-  { 0x5c, L"Right <ReactOS>" },
+  { 0x5b, L"Left <ClawOS>" },
+  { 0x5c, L"Right <ClawOS>" },
   { 0x5d, L"Application" },
   { 0, NULL }
 };

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Automatic Testing Utility
+ * PROJECT:     ClawOS Automatic Testing Utility
  * LICENSE:     GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
  * PURPOSE:     Main implementation file
  * COPYRIGHT:   Copyright 2008-2009 Colin Finck (colin@reactos.org)
@@ -20,7 +20,7 @@ CConfiguration Configuration;
 static void
 IntPrintUsage()
 {
-    cout << "rosautotest - ReactOS Automatic Testing Utility" << endl
+    cout << "rosautotest - ClawOS Automatic Testing Utility" << endl
          << "Usage: rosautotest [options] [module] [test]" << endl
          << "  options:" << endl
          << "    /?           - Shows this help." << endl
@@ -28,8 +28,8 @@ IntPrintUsage()
          << "                   Skips the comment set in the configuration file (if any)." << endl
          << "                   Only has an effect when /w is also used." << endl
          << "    /n           - Do not print test output to console" << endl
-         << "    /r           - Maintain information to resume from ReactOS crashes" << endl
-         << "                   Can only be run under ReactOS and relies on sysreg2," << endl
+         << "    /r           - Maintain information to resume from ClawOS crashes" << endl
+         << "                   Can only be run under ClawOS and relies on sysreg2," << endl
          << "                   so incompatible with /w" << endl
          << "    /s           - Shut down the system after finishing the tests." << endl
          << "    /t <num>     - Repeat the test <num> times (1-10000)" << endl

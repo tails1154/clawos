@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Kernel
+ * PROJECT:     ClawOS Kernel
  * LICENSE:     MIT (https://spdx.org/licenses/MIT)
  * PURPOSE:     Routines for x86 / x64 CPU information gathering
  * COPYRIGHT:   Copyright 2026 Timo Kreuzer <timo.kreuzer@reactos.org>

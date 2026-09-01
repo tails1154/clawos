@@ -1,5 +1,5 @@
 /*
- * ReactOS AMD PCNet Driver
+ * ClawOS AMD PCNet Driver
  *
  * Copyright (C) 2003 Vizzini <vizzini@plasmic.com>
  *

@@ -1,6 +1,6 @@
 /*
- *  ReactOS kernel
- *  Copyright (C) 2003 ReactOS Team
+ *  ClawOS kernel
+ *  Copyright (C) 2003 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS text-mode setup
+ * PROJECT:         ClawOS text-mode setup
  * FILE:            base/setup/usetup/fslist.h
  * PURPOSE:         Filesystem list functions
  * PROGRAMMER:      Casper S. Hornstrup (chorns@users.sourceforge.net)

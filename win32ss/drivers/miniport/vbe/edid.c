@@ -1,5 +1,5 @@
 /*
- * ReactOS VBE EDID management
+ * ClawOS VBE EDID management
  *
  * Copyright (C) 2006 Hervé Poussineau
  *

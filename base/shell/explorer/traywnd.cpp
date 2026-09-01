@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Explorer
+ * PROJECT:     ClawOS Explorer
  * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
  * PURPOSE:     Tray window implementation
  * COPYRIGHT:   Copyright 2006-2007 Thomas Weidenmueller <w3seek@reactos.org>
@@ -477,7 +477,7 @@ public:
 
         SaveState();
 
-        /* Display the ReactOS Shutdown Dialog */
+        /* Display the ClawOS Shutdown Dialog */
         ExitWindowsDialog(m_hWnd);
 
         /*

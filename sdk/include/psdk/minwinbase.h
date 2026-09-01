@@ -3,7 +3,7 @@
  *
  * Basic Win-API definitions
  *
- * This file is part of the ReactOS SDK.
+ * This file is part of the ClawOS SDK.
  *
  * Contributors:
  *   Created by Timo Kreuzer <timo.kreuzer@reactos.org>

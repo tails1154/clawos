@@ -1,6 +1,6 @@
 /*
- *  ReactOS kernel
- *  Copyright (C) 2017 ReactOS Team
+ *  ClawOS kernel
+ *  Copyright (C) 2017 ClawOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          ClawOS kernel
  * FILE:             sdk/lib/drivers/rxce/rxce.c
  * PURPOSE:          RXCE library
  * PROGRAMMER:       Pierre Schweitzer (pierre@reactos.org)

@@ -1,5 +1,5 @@
 /*
- * ReactOS Explorer
+ * ClawOS Explorer
  *
  * Copyright 2009 Andrew Hill <ash77 at domain reactos.org>
  *
@@ -635,7 +635,7 @@ public:
     LRESULT OnFolderOptions(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled);
     LRESULT OnMapNetworkDrive(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled);
     LRESULT OnDisconnectNetworkDrive(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled);
-    LRESULT OnAboutReactOS(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled);
+    LRESULT OnAboutClawOS(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled);
     LRESULT OnGoBack(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled);
     LRESULT OnGoForward(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled);
     LRESULT OnGoUpLevel(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled);
@@ -691,7 +691,7 @@ public:
         COMMAND_ID_HANDLER(IDM_TOOLS_FOLDEROPTIONS, OnFolderOptions)
         COMMAND_ID_HANDLER(IDM_TOOLS_MAPNETWORKDRIVE, OnMapNetworkDrive)
         COMMAND_ID_HANDLER(IDM_TOOLS_DISCONNECTNETWORKDRIVE, OnDisconnectNetworkDrive)
-        COMMAND_ID_HANDLER(IDM_HELP_ABOUT, OnAboutReactOS)
+        COMMAND_ID_HANDLER(IDM_HELP_ABOUT, OnAboutClawOS)
         COMMAND_ID_HANDLER(IDM_GOTO_BACK, OnGoBack)
         COMMAND_ID_HANDLER(IDM_GOTO_FORWARD, OnGoForward)
         COMMAND_ID_HANDLER(IDM_GOTO_UPONELEVEL, OnGoUpLevel)
@@ -3946,9 +3946,9 @@ LRESULT CShellBrowser::OnDisconnectNetworkDrive(WORD wNotifyCode, WORD wID, HWND
     return 0;
 }
 
-LRESULT CShellBrowser::OnAboutReactOS(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled)
+LRESULT CShellBrowser::OnAboutClawOS(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL &bHandled)
 {
-    ShellAbout(m_hWnd, _T("ReactOS"), NULL, NULL);
+    ShellAbout(m_hWnd, _T("ClawOS"), NULL, NULL);
     return 0;
 }
 

@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS msgina.dll
+ * PROJECT:         ClawOS msgina.dll
  * FILE:            lib/msgina/shutdown.c
  * PURPOSE:         Shutdown Dialog Box (GUI only)
  * PROGRAMMERS:     Lee Schroeder (spaceseel at gmail dot com)
@@ -194,7 +194,7 @@ IsFriendlyUIActive(VOID)
     if (lRet != ERROR_SUCCESS)
         return FALSE;
 
-    /* CORE-17282 First check an optional ReactOS specific override, that Windows does not check.
+    /* CORE-17282 First check an optional ClawOS specific override, that Windows does not check.
        We use this to allow users pairing 'Server'-configuration with FriendlyShutdown.
        Otherwise users would have to change CSDVersion or LogonType (side-effects AppCompat) */
     dwValue = 0;

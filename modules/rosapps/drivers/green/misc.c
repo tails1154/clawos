@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS VT100 emulator
+ * PROJECT:     ClawOS VT100 emulator
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        drivers/base/green/misc.c
  * PURPOSE:     Misceallenous operations
